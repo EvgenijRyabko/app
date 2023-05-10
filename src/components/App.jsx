@@ -26,8 +26,6 @@ function App() {
     else setAnswers([...answers, { question: curr, answer: id }]);
   };
 
-  console.log(answers);
-
   return (
     <div className="grid grid-rows-[8fr_2fr] h-screen">
       <div className="grid grid-rows-[3fr_7fr] w-full h-full">
