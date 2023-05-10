@@ -26,6 +26,8 @@ function App() {
     else setAnswers([...answers, { question: curr, answer: id }]);
   };
 
+  console.log(answers);
+
   return (
     <div className="grid grid-rows-[8fr_2fr] h-screen">
       <div className="grid grid-rows-[3fr_7fr] w-full h-full">
@@ -35,7 +37,7 @@ function App() {
         <ul className="grid text-[calc(12px+1vw)]">
           {obj?.choices.map((choice, choiceId) => (
             <li className="grid h-[calc(50px+1vw)] justify-center" key={choiceId}>
-              {answers[curr]?.answer === choiceId ? (
+              {answers.find((el) => el.question === curr)?.answer === choiceId ? (
                 <button
                   className="border-2 w-[500px] border-green-400"
                   type="button"
