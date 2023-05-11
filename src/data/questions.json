@@ -3,7 +3,11 @@
 		"question": "Hello, how are you?",
 		"choices": [
 			"I'm fine, thank you!",
-			"Not fine"
+			"Not fine",
+			"Very well",
+			"He-he-he",
+			"Here he comes",
+			"Poland"
 		]
 	},
 	{
