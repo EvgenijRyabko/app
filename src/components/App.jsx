@@ -13,5 +13,5 @@ function App() {
     </BrowserRouter>
   );
 }
-
+//Пиздец тебе Серёга
 export default App;
