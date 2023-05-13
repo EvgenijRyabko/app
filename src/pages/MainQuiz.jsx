@@ -85,6 +85,7 @@ function MainQuiz() {
         previousLabel="<"
         renderOnZeroPageCount={null}
       />
+      
       <HelmetProvider>
         <Helmet title="Тест" />
       </HelmetProvider>
