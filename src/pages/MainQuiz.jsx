@@ -2,8 +2,11 @@ import React, { useEffect, useState } from 'react';
 import ReactPaginate from 'react-paginate';
 import { Helmet, HelmetProvider } from 'react-helmet-async';
 import data from '../data/questions.json';
+import { useNavigate } from 'react-router-dom';
+
 
 function MainQuiz() {
+  const navigate = useNavigate();
   const [obj, setObj] = useState();
   const [curr, setCurr] = useState();
   const [answers, setAnswers] = useState([]);
@@ -28,7 +31,15 @@ function MainQuiz() {
   };
 
   return (
-    <div className="grid grid-rows-[8fr_2fr] h-screen">
+    <div className='grid grid-rows-[2fr_12fr] h-screen'>
+      <div className='bg-[#5a1372f3] grid'>
+        <button
+          className="border-2 border-slate-400 w-[350px] h-3/6 m-4"
+          type="button"
+          onClick={() => navigate('/')}
+        >На головну</button>
+      </div>
+      <div className="grid grid-rows-[8fr_2fr] w-full bg-[#680689fd]">
       <div className="grid grid-rows-[3fr_7fr] w-full h-full">
         <h3 className="text-[calc(24px+1vw)] justify-self-center place-self-center">
           {obj?.question}
@@ -78,6 +89,8 @@ function MainQuiz() {
         <Helmet title="Тест" />
       </HelmetProvider>
     </div>
+    </div>
+    
   );
 }
 
