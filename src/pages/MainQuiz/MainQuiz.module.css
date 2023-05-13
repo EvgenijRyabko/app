@@ -77,7 +77,9 @@
 }
 
 .paginatePage {
-	@apply font-semibold px-2;
+	@apply font-semibold px-2
+	
+	hidden;
 }
 
 .paginateNext {

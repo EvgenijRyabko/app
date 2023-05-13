@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import ReactPaginate from 'react-paginate';
 import { Helmet, HelmetProvider } from 'react-helmet-async';
-import data from '../../data/questions.json';
+import data from '../../data/questions';
 import { useNavigate } from 'react-router-dom';
 import Swal from 'sweetalert2';
 import classes from './MainQuiz.module.css';
@@ -11,7 +11,6 @@ function MainQuiz({ answers, setAnswers = (f) => f }) {
 	const navigate = useNavigate();
 	const [obj, setObj] = useState();
 	const [curr, setCurr] = useState();
-	// const [answers, setAnswers] = useState([]);
 
 	useEffect(() => {
 		setCurr(0);
@@ -30,16 +29,26 @@ function MainQuiz({ answers, setAnswers = (f) => f }) {
 		if (answers.find((el) => el.question === curr))
 			setAnswers(answers.map((el) => (el.question === curr ? { ...el, answer: id } : el)));
 		else setAnswers([...answers, { question: curr, answer: id }]);
+
+		if (curr !== data.length - 1) setCurr(curr + 1);
+		else navigate('/result');
 	};
 
-	const onFinish = () => {
-		try {
-			if (answers.length < data.length) throw "Finish all questions first!";
-			else navigate("/result");
-		} catch (error) {
-			Swal.fire("", error, "error");
+	const onNextClick = () => {
+		if (answers.find((el) => el.question === curr)) {
+			if (curr !== data.length - 1)
+				setCurr(curr + 1);
 		}
 	}
+
+	// const onFinish = () => {
+	// 	try {
+	// 		if (answers.length < data.length) throw "Finish all questions first!";
+	// 		else navigate("/result");
+	// 	} catch (error) {
+	// 		Swal.fire("", error, "error");
+	// 	}
+	// }
 
 	return (
 		<div className={classes.container}>
@@ -56,30 +65,38 @@ function MainQuiz({ answers, setAnswers = (f) => f }) {
 						{obj?.question}
 					</h3>
 					<ul className={classes.options}>
-						{obj?.choices.map((choice, choiceId) => (
-							<li key={choiceId}>
+						{obj?.choices.map((el, id) => (
+							<li key={id}>
 								<button
 									type='button'
 									onClick={() => {
-										onSelect(choiceId);
+										onSelect(el.id);
 									}}
 									className={
-										answers.find((el) => el.question === curr)?.answer === choiceId
+										answers.find((answer) => answer.question === curr)?.answer === el.id
 											? "border-2 border-green-400 w-[500px]"
 											: "border-2 w-[500px]"}
 								>
-									{choice}
+									{el.choice}
 								</button>
 							</li>
 						))}
 					</ul>
-					{
+					{/* {
 						curr === data.length - 1
 							? <button type='button' onClick={onFinish}>Закончить тест</button>
 							: <></>
-					}
+					} */}
 				</div>
-				<ReactPaginate
+				<div className='flex w-full justify-around'>
+					<button className={curr > 0 ? "" : "text-slate-600"} onClick={() => { if (curr >= 1) setCurr(curr - 1); }}>{"<-"}</button>
+					<button className={
+						answers.find((answer) => answer.question === curr)
+							? ""
+							: "text-slate-600"
+					} onClick={onNextClick}>{"->"}</button>
+				</div>
+				{/* <ReactPaginate
 					className={classes.paginate}
 					pageClassName={classes.paginatePage}
 					nextClassName={classes.paginateNext}
@@ -87,11 +104,12 @@ function MainQuiz({ answers, setAnswers = (f) => f }) {
 					activeClassName={classes.paginateActive}
 					onPageChange={(e) => setCurr(e.selected)}
 					pageCount={data.length}
-					pageRangeDisplayed={data.length}
+					breakLabel=""
+					pageRangeDisplayed={0}
 					nextLabel=">"
 					previousLabel="<"
 					renderOnZeroPageCount={null}
-				/>
+				/> */}
 				<HelmetProvider>
 					<Helmet title="Тест" />
 				</HelmetProvider>
