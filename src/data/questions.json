@@ -2,89 +2,157 @@
 	{
 		"question": "Hello, how are you?",
 		"choices": [
-			"I'm fine, thank you!",
-			"Not fine",
-			"Very well",
-			"He-he-he",
-			"Here he comes",
-			"Poland"
+			{
+				"id": 1,
+				"choice": "I'm fine, thank you!"
+			},
+			{
+				"id": 4,
+				"choice": "Not fine"
+			}
 		]
 	},
 	{
 		"question": "How's it going?",
 		"choices": [
-			"I'm fine, thank you!",
-			"Not fine"
+			{
+				"id": 2,
+				"choice": "I'm fine, thank you!"
+			},
+			{
+				"id": 3,
+				"choice": "Not fine"
+			}
 		]
 	},
 	{
 		"question": "Nice cock, yeah?",
 		"choices": [
-			"I'm fine, thank you!",
-			"Not fine"
+			{
+				"id": 1,
+				"choice": "I'm fine, thank you!"
+			},
+			{
+				"id": 4,
+				"choice": "Not fine"
+			}
 		]
 	},
 	{
 		"question": "Garry?",
 		"choices": [
-			"I'm fine, thank you!",
-			"Not fine"
+			{
+				"id": 1,
+				"choice": "I'm fine, thank you!"
+			},
+			{
+				"id": 4,
+				"choice": "Not fine"
+			}
 		]
 	},
 	{
 		"question": "Peter?",
 		"choices": [
-			"I'm fine, thank you!",
-			"Not fine"
+			{
+				"id": 1,
+				"choice": "I'm fine, thank you!"
+			},
+			{
+				"id": 4,
+				"choice": "Not fine"
+			}
 		]
 	},
 	{
 		"question": "Si?",
 		"choices": [
-			"I'm fine, thank you!",
-			"Not fine"
+			{
+				"id": 1,
+				"choice": "I'm fine, thank you!"
+			},
+			{
+				"id": 4,
+				"choice": "Not fine"
+			}
 		]
 	},
 	{
 		"question": "America?",
 		"choices": [
-			"I'm fine, thank you!",
-			"Not fine"
+			{
+				"id": 1,
+				"choice": "I'm fine, thank you!"
+			},
+			{
+				"id": 4,
+				"choice": "Not fine"
+			}
 		]
 	},
 	{
 		"question": "Lugansk?",
 		"choices": [
-			"I'm fine, thank you!",
-			"Not fine"
+			{
+				"id": 1,
+				"choice": "I'm fine, thank you!"
+			},
+			{
+				"id": 4,
+				"choice": "Not fine"
+			}
 		]
 	},
 	{
 		"question": "Sosamba?",
 		"choices": [
-			"I'm fine, thank you!",
-			"Not fine"
+			{
+				"id": 1,
+				"choice": "I'm fine, thank you!"
+			},
+			{
+				"id": 4,
+				"choice": "Not fine"
+			}
 		]
 	},
 	{
 		"question": "Treab?",
 		"choices": [
-			"I'm fine, thank you!",
-			"Not fine"
+			{
+				"id": 1,
+				"choice": "I'm fine, thank you!"
+			},
+			{
+				"id": 4,
+				"choice": "Not fine"
+			}
 		]
 	},
 	{
 		"question": "adfadf?",
 		"choices": [
-			"I'm fine, thank you!",
-			"Not fine"
+			{
+				"id": 1,
+				"choice": "I'm fine, thank you!"
+			},
+			{
+				"id": 4,
+				"choice": "Not fine"
+			}
 		]
 	},
 	{
 		"question": "1243?",
 		"choices": [
-			"I'm fine, thank you!",
-			"Not fine"
+			{
+				"id": 1,
+				"choice": "I'm fine, thank you!"
+			},
+			{
+				"id": 4,
+				"choice": "Not fine"
+			}
 		]
 	}
 ]
