@@ -3,14 +3,15 @@ import ReactPaginate from 'react-paginate';
 import { Helmet, HelmetProvider } from 'react-helmet-async';
 import data from '../../data/questions.json';
 import { useNavigate } from 'react-router-dom';
+import Swal from 'sweetalert2';
 import classes from './MainQuiz.module.css';
 
 
-function MainQuiz() {
+function MainQuiz({ answers, setAnswers = (f) => f }) {
 	const navigate = useNavigate();
 	const [obj, setObj] = useState();
 	const [curr, setCurr] = useState();
-	const [answers, setAnswers] = useState([]);
+	// const [answers, setAnswers] = useState([]);
 
 	useEffect(() => {
 		setCurr(0);
@@ -30,6 +31,15 @@ function MainQuiz() {
 			setAnswers(answers.map((el) => (el.question === curr ? { ...el, answer: id } : el)));
 		else setAnswers([...answers, { question: curr, answer: id }]);
 	};
+
+	const onFinish = () => {
+		try {
+			if (answers.length < data.length) throw "Finish all questions first!";
+			else navigate("/result");
+		} catch (error) {
+			Swal.fire("", error, "error");
+		}
+	}
 
 	return (
 		<div className={classes.container}>
@@ -63,6 +73,11 @@ function MainQuiz() {
 							</li>
 						))}
 					</ul>
+					{
+						curr === data.length - 1
+							? <button type='button' onClick={onFinish}>Закончить тест</button>
+							: <></>
+					}
 				</div>
 				<ReactPaginate
 					className={classes.paginate}
