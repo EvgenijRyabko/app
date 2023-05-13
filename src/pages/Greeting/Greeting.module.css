@@ -1,0 +1,51 @@
+.container {
+	@apply grid  
+	
+	bg-[#101010];
+}
+
+.background {
+	@apply grid
+
+	bg-[url('https://www.vergesense.com/hubfs/Imported_Blog_Media/a64a7af4-6598-4a48-b0b9-cc645b7f7fd5_AdobeStock_302113529.png')] 
+	bg-cover
+
+	h-screen 
+	w-5/6 
+	
+	place-self-center;
+}
+
+.content {
+	@apply grid
+
+	grid-rows-[4fr_6fr] 
+	
+	backdrop-brightness-[0.3] 
+	
+	h-screen 
+	w-full 
+	
+	place-self-center;
+}
+
+.head {
+	@apply justify-self-center
+	place-self-center;
+}
+
+.button {
+	@apply border-2
+	border-slate-300
+	
+	min-w-[500px]
+	min-h-[50px]
+	
+	w-1/6
+	h-1/6
+	
+	text-[calc(12px+1vw)]
+	
+	justify-self-center
+	place-self-center;
+}
