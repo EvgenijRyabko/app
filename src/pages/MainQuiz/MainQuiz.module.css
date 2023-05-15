@@ -2,7 +2,7 @@
 	@apply grid 
 	
 	grid-rows-[2fr_12fr]
-	bg-[#5a1372f3] 
+	bg-[#cecece] 
 	
 	min-h-screen;
 }
@@ -92,4 +92,8 @@
 
 .paginateActive {
 	@apply text-amber-600 font-bold;
+}
+
+.shadow { 
+	text-shadow: 4px 4px 2px #DEDEDE 
 }

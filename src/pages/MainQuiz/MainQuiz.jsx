@@ -41,15 +41,6 @@ function MainQuiz({ answers, setAnswers = (f) => f }) {
 		}
 	}
 
-	// const onFinish = () => {
-	// 	try {
-	// 		if (answers.length < data.length) throw "Finish all questions first!";
-	// 		else navigate("/result");
-	// 	} catch (error) {
-	// 		Swal.fire("", error, "error");
-	// 	}
-	// }
-
 	return (
 		<div className={classes.container}>
 			<div className={classes.head}>
@@ -82,11 +73,6 @@ function MainQuiz({ answers, setAnswers = (f) => f }) {
 							</li>
 						))}
 					</ul>
-					{/* {
-						curr === data.length - 1
-							? <button type='button' onClick={onFinish}>Закончить тест</button>
-							: <></>
-					} */}
 				</div>
 				<div className='flex w-full justify-around'>
 					<button className={curr > 0 ? "" : "text-slate-600"} onClick={() => { if (curr >= 1) setCurr(curr - 1); }}>{"<-"}</button>
@@ -96,20 +82,6 @@ function MainQuiz({ answers, setAnswers = (f) => f }) {
 							: "text-slate-600"
 					} onClick={onNextClick}>{"->"}</button>
 				</div>
-				{/* <ReactPaginate
-					className={classes.paginate}
-					pageClassName={classes.paginatePage}
-					nextClassName={classes.paginateNext}
-					previousClassName={classes.paginatePrevious}
-					activeClassName={classes.paginateActive}
-					onPageChange={(e) => setCurr(e.selected)}
-					pageCount={data.length}
-					breakLabel=""
-					pageRangeDisplayed={0}
-					nextLabel=">"
-					previousLabel="<"
-					renderOnZeroPageCount={null}
-				/> */}
 				<HelmetProvider>
 					<Helmet title="Тест" />
 				</HelmetProvider>

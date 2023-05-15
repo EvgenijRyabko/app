@@ -1,53 +1,53 @@
 [
 	{
-		"question": "Hello, how are you?",
+		"question": "Какой вид деятельности Вас больше привлекает?",
 		"choices": [
 			{
 				"id": 1,
-				"choice": "I'm fine, thank you!"
+				"choice": "Создание новых лекарств"
 			},
 			{
 				"id": 4,
-				"choice": "Not fine"
+				"choice": "Окультуривание ландшафта"
 			}
 		]
 	},
 	{
-		"question": "How's it going?",
+		"question": "Какой вид деятельности Вас больше привлекает?",
 		"choices": [
 			{
 				"id": 2,
-				"choice": "I'm fine, thank you!"
+				"choice": "Разработка искусственного интеллекта"
 			},
 			{
 				"id": 3,
-				"choice": "Not fine"
+				"choice": "Сочинение стихотворений"
 			}
 		]
 	},
 	{
-		"question": "Nice cock, yeah?",
+		"question": "Как Вы предпочитаете проводить свой выходной день?",
 		"choices": [
 			{
-				"id": 1,
-				"choice": "I'm fine, thank you!"
+				"id": 2,
+				"choice": "Отдохнуть в компании друзей или с близкими"
 			},
 			{
 				"id": 4,
-				"choice": "Not fine"
+				"choice": "Послушать музыку или почитать книгу"
 			}
 		]
 	},
 	{
-		"question": "Garry?",
+		"question": "Где бы вы хотели работать?",
 		"choices": [
 			{
 				"id": 1,
-				"choice": "I'm fine, thank you!"
+				"choice": "В комфортных условиях, например офис или студия"
 			},
 			{
 				"id": 4,
-				"choice": "Not fine"
+				"choice": "Не люблю сидеть в 4х стенах, предпочёл бы свежий воздух или путешествия"
 			}
 		]
 	},
@@ -104,7 +104,7 @@
 		]
 	},
 	{
-		"question": "Sosamba?",
+		"question": "Sanstchto?",
 		"choices": [
 			{
 				"id": 1,
