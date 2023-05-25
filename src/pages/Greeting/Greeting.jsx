@@ -10,13 +10,13 @@ function Greeting() {
 		<div className={classes.container}>
 			<div className={classes.background}>
 				<div className={classes.content}>
-					<h3 className={classes.head}>Hello</h3>
+					<h3 className={classes.head}>Тест на виявлення профорієнтації</h3>
 					<button
 						className={classes.button}
 						type="button"
 						onClick={() => navigate('/quiz')}
 					>
-						Начать тест!
+						Почати тест!
 					</button>
 					<HelmetProvider>
 						<Helmet title="Augur" />
