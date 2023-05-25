@@ -2,8 +2,9 @@
 	@apply grid 
 	
 	grid-rows-[2fr_12fr]
-	bg-[#cecece] 
-	
+	 
+	bg-gradient-to-bl from-[#4ab6ea] to-[#5ef5ce]
+
 	min-h-screen;
 }
 
