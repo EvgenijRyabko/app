@@ -52,7 +52,7 @@ function MainQuiz({ answers, setAnswers = (f) => f }) {
 					type="button"
 					onClick={() => navigate('/')}
 				>
-					<div className='w-full border-2 border-white rounded-md bg-[#3b9ac9]'>
+					<div className='grid w-full place-self-center border-2 border-white rounded-md bg-[#43c2c3]'>
 						<img className='w-full' src={homeImg} alt='none' />
 					</div>
 					<p className='place-self-center'>НА ГОЛОВНУ</p>
@@ -67,20 +67,22 @@ function MainQuiz({ answers, setAnswers = (f) => f }) {
 						{obj?.choices.map((el, id) => (
 							<li key={id} className={
 								answers.find((answer) => answer.question === curr)?.answer === el.id
-									? id === 0 ? 'border-[3px] border-green-400 w-full rotate-[-10deg]' : 'border-[3px] border-green-400 min-w-full rotate-[5deg]'
-									: id === 0 ? 'border-[3px] min-w-full rotate-[-10deg]' : 'border-[3px] min-w-full rotate-[5deg]'}>
-								<div className='m-2'>
+									? id === 0 ? 'justify-self-end border-[3px] border-green-400 w-full rotate-[-10deg]' : 'justify-self-start border-[3px] border-green-400 min-w-full rotate-[5deg]'
+									: id === 0 ? 'justify-self-end border-[3px] min-w-full rotate-[-10deg]' : 'justify-self-start border-[3px] min-w-full rotate-[5deg]'}>
+								<div className='mb-0 m-2'>
 									<img src='https://catherineasquithgallery.com/uploads/posts/2021-02/1614289876_62-p-chisto-chernii-fon-bez-nichego-75.jpg' alt='image' className='object-cover h-full' />
 								</div>
-								<p className='text-xs font-semibold text-center text-transparent bg-clip-text bg-gradient-to-tr from-[#5ef5ce] to-[#4ab6ea]'>{el.choice}</p>
-								<button
+								<div className='grid'>
+									<p className='text-xs font-semibold text-center text-transparent justify-self-center place-self-center bg-clip-text bg-gradient-to-tr from-[#5ef5ce] to-[#4ab6ea]'>{el.choice}</p>
+								</div>
+								{/* <button
 									type='button'
 									onClick={() => {
 										onSelect(el.id);
 									}}
 									className='absolute w-[90%] h-full'
 								>
-								</button>
+								</button> */}
 							</li>
 						))}
 					</ul>

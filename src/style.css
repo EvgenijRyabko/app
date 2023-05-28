@@ -1,10 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Kanit&family=Lato:ital,wght@0,400;1,100;1,300&family=Montserrat+Subrayada:wght@700&family=Roboto+Flex&display=swap');
 
 * {
-	font-family: "AA-Pussycat-Regulat";
-	src: url("./AA-Pussycat-Regular.ttf");
+	font-family: 'Kanit', sans-serif;
+	font-family: 'Lato', sans-serif;
+	font-family: 'Montserrat Subrayada', sans-serif;
+	font-family: 'Roboto Flex', sans-serif;
 	font-weight: 400;
 	font-size: 48px;
 	color: #ffffff;

@@ -20,14 +20,14 @@
 
 	w-[400px]
 	
-	mx-4
+	mx-2
 	my-1;
 }
 
 .content {
 	@apply grid
 	
-	grid-rows-[8fr_1fr]
+	grid-rows-[10fr_1fr]
 	
 	w-full;
 }
@@ -35,7 +35,7 @@
 .quiz {
 	@apply grid
 	
-	grid-rows-[1fr_5fr]
+	grid-rows-[14%_3fr]
 	
 	w-full
 	h-full;
@@ -45,27 +45,29 @@
 	@apply text-xl
 	
 	justify-self-center
-	place-self-center;
+	place-self-center; 
 }
 
 .options {
 	@apply grid
 
 	my-2
-	grid-cols-2;
+	grid-cols-2
+	gap-36
 }
 
 .options li {
 	@apply grid
 	relative
 
-	grid-rows-[4fr_2fr]
+	grid-rows-[3fr_1fr]
+	pb-0
 	
-	h-full
+	h-[90%]
 	min-h-[500px]
 
-	w-[50%]
-	min-w-[300px]
+	w-[40%]
+	min-w-[500px]
 
 	break-words
 
@@ -73,9 +75,7 @@
 
 	bg-white
 	
-	justify-self-center
-	place-self-center
-	justify-center;
+
 }
 
 .paginate {
