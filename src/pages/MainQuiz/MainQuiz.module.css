@@ -1,9 +1,9 @@
 .container {
 	@apply grid 
 	
-	grid-rows-[2fr_12fr]
+	grid-rows-[10%_90%]
 	 
-	bg-gradient-to-bl from-[#4ab6ea] to-[#5ef5ce]
+	bg-gradient-to-tr from-[#5ef5ce] to-[#4ab6ea]
 
 	min-h-screen;
 }
@@ -13,20 +13,21 @@
 }
 
 .returnButton {
-	@apply border-2
+	@apply grid
 	
-	border-slate-400
+	grid-cols-[1fr_4fr]
+	gap-1
+
+	w-[400px]
 	
-	w-[350px]
-	h-3/6
-	
-	m-4;
+	mx-4
+	my-1;
 }
 
 .content {
 	@apply grid
 	
-	grid-rows-[8fr_2fr]
+	grid-rows-[8fr_1fr]
 	
 	w-full;
 }
@@ -34,14 +35,14 @@
 .quiz {
 	@apply grid
 	
-	grid-rows-[3fr_7fr]
+	grid-rows-[1fr_5fr]
 	
 	w-full
 	h-full;
 }
 
 .question {
-	@apply text-[calc(24px+1vw)]
+	@apply text-xl
 	
 	justify-self-center
 	place-self-center;
@@ -49,15 +50,31 @@
 
 .options {
 	@apply grid
-	
-	text-[calc(12px+1vw)];
+
+	my-2
+	grid-cols-2;
 }
 
 .options li {
 	@apply grid
+	relative
+
+	grid-rows-[4fr_2fr]
 	
-	h-[calc(50px+1vw)]
+	h-full
+	min-h-[500px]
+
+	w-[50%]
+	min-w-[300px]
+
+	break-words
+
+	text-black
+
+	bg-white
 	
+	justify-self-center
+	place-self-center
 	justify-center;
 }
 
@@ -95,6 +112,6 @@
 	@apply text-amber-600 font-bold;
 }
 
-.shadow { 
-	text-shadow: 4px 4px 2px #DEDEDE 
+.shadow {
+	text-shadow: 4px 4px 2px #dedede;
 }
