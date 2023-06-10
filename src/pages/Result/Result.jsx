@@ -1,9 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { Helmet, HelmetProvider } from "react-helmet-async";
-import engineerBG from '../../assets/engineerBG.avif';
-import programmerBG from '../../assets/programmerBG.avif';
-import data from '../../data/questions.json';
+import questions from '../../data/questions.json';
+import results from '../../data/results.json';
 import Swal from "sweetalert2";
 import ResultElement from '../../components/ResultElement';
 
@@ -16,9 +15,14 @@ function Result({ answers }) {
 		art: 0
 	});
 	const [res, setRes] = useState();
+	const [pageText, setPageText] = useState({
+		button: '',
+		header: '',
+		text: '',
+	});
 
 	useEffect(() => {
-		if (answers.length !== data.length) navigate("/quiz"); // Если ответов меньше, чем вопросов => перемещает обратно на тест
+		if (answers.length !== questions.length) navigate("/quiz"); // Если ответов меньше, чем вопросов => перемещает обратно на тест
 
 		(() => {
 			for (let i = 0; i < answers.length; i++) {
@@ -51,7 +55,31 @@ function Result({ answers }) {
 		setRes(result);
 	}, []);
 
-	console.log(categories);
+	useEffect(() => {
+
+		switch (lang) {
+			case 'ru':
+				setPageText({
+					header: 'Тест на определение профориентации',
+					button: 'Начать тест!'
+				});
+				break;
+			case 'uk':
+				setPageText({
+					header: 'Тест на виявлення профорієнтації',
+					button: 'Почати тест!'
+				});
+				break;
+			case 'en':
+				setPageText({
+					header: 'Career Guidance Test',
+					button: 'Start test!'
+				});
+				break;
+			default:
+				break;
+		}
+	}, [lang]);
 
 	return (
 		<div className="min-h-screen w-full">

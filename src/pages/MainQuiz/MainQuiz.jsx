@@ -1,19 +1,15 @@
 import React, { useEffect, useState } from 'react';
-import ReactPaginate from 'react-paginate';
 import { Helmet, HelmetProvider } from 'react-helmet-async';
 import data from '../../data/questions';
 import { useNavigate } from 'react-router-dom';
 import homeImg from '../../assets/Home.svg';
-import Swal from 'sweetalert2';
 import classes from './MainQuiz.module.css';
 
-function MainQuiz({ answers, setAnswers = (f) => f }) {
+function MainQuiz({ lang, answers, setAnswers = (f) => f }) {
 	const navigate = useNavigate();
 	const [obj, setObj] = useState();
 	const [curr, setCurr] = useState();
-
-	const optionClass = `border-[3px] border-green-400 w-full ` + `rotate-${(async () => { return await Math.round(Math.random() * 10) })()
-		} `;
+	const [pageText, setPageText] = useState();
 
 	useEffect(() => {
 		setCurr(0);
