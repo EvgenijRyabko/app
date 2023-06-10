@@ -5,7 +5,8 @@ function ResultElement({ background, image, title, text }) {
 	const navigate = useNavigate();
 
 	return (
-		<div className={`grid bg-cover min-h-screen w-full place-self-center bg-[url('${background}')]`}>
+		<div className={`grid min-h-screen w-full place-self-center`}>
+			<img className="absolute w-full h-screen object-cover" src={background} />
 			<div className={`grid backdrop-brightness-[0.8] min-h-screen w-full place-self-center`}>
 				<div className="flex flex-wrap w-3/6 min-h-screen place-self-center">
 					<div className="flex w-full justify-center">

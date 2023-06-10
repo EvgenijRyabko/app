@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { Helmet, HelmetProvider } from "react-helmet-async";
+import engineerBG from '../../assets/engineerBG.avif';
+import programmerBG from '../../assets/programmerBG.avif';
 import data from '../../data/questions.json';
 import Swal from "sweetalert2";
 import ResultElement from '../../components/ResultElement';
@@ -74,18 +76,18 @@ function Result({ answers }) {
 							/>;
 						case "hum":
 							return <ResultElement
-							background={`https://img.freepik.com/free-vector/beautiful-book-club-pattern-illustration_23-2149314748.jpg?w=1380&t=st=1686409944~exp=1686410544~hmac=560f589cf7db0138fad8ffccab61711e9bcfd66d672541a006901ebcd4921aa6`}
-							image={`https://img.freepik.com/free-vector/tiny-screenwriter-sitting-on-retro-typewriter-thinking-screenplay-while-paper-drafts-flying-around-author_74855-14178.jpg?w=1800&t=st=1686354809~exp=1686355409~hmac=a6726f089f058447daed5413f6cc466217657a76fcc7554f0880027c718a8ce9`}
-							title={`Заголовок`}
-							text={`Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci odit dolorum, veniam ducimus facilis aliquam harum aperiam nesciunt. Iusto est dicta magni perferendis cumque error atque esse quia harum eligendi.`}
-						/>;
+								background={`https://img.freepik.com/free-vector/beautiful-book-club-pattern-illustration_23-2149314748.jpg?w=1380&t=st=1686409944~exp=1686410544~hmac=560f589cf7db0138fad8ffccab61711e9bcfd66d672541a006901ebcd4921aa6`}
+								image={`https://img.freepik.com/free-vector/tiny-screenwriter-sitting-on-retro-typewriter-thinking-screenplay-while-paper-drafts-flying-around-author_74855-14178.jpg?w=1800&t=st=1686354809~exp=1686355409~hmac=a6726f089f058447daed5413f6cc466217657a76fcc7554f0880027c718a8ce9`}
+								title={`Заголовок`}
+								text={`Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci odit dolorum, veniam ducimus facilis aliquam harum aperiam nesciunt. Iusto est dicta magni perferendis cumque error atque esse quia harum eligendi.`}
+							/>;
 						case "art":
 							return <ResultElement
-							background={`https://img.freepik.com/free-vector/hand-drawn-world-art-day-background_23-2149332776.jpg?w=1800&t=st=1686410032~exp=1686410632~hmac=31ee03400a30e8fbc4fdfe1776fa303e57064a0fb8fc54e21d2cede1ff2fec98`}
-							image={`https://img.freepik.com/free-vector/smiling-woman-standing-near-easel-and-painting-flat-illustration_74855-11057.jpg?w=1800&t=st=1686354901~exp=1686355501~hmac=e82f48bdd337ddab8eb093bd4c973cda1306817671fb453b8620cda1dc57bbac`}
-							title={`Заголовок`}
-							text={`Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci odit dolorum, veniam ducimus facilis aliquam harum aperiam nesciunt. Iusto est dicta magni perferendis cumque error atque esse quia harum eligendi.`}
-						/>;
+								background={`https://img.freepik.com/free-vector/hand-drawn-world-art-day-background_23-2149332776.jpg?w=1800&t=st=1686410032~exp=1686410632~hmac=31ee03400a30e8fbc4fdfe1776fa303e57064a0fb8fc54e21d2cede1ff2fec98`}
+								image={`https://img.freepik.com/free-vector/smiling-woman-standing-near-easel-and-painting-flat-illustration_74855-11057.jpg?w=1800&t=st=1686354901~exp=1686355501~hmac=e82f48bdd337ddab8eb093bd4c973cda1306817671fb453b8620cda1dc57bbac`}
+								title={`Заголовок`}
+								text={`Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci odit dolorum, veniam ducimus facilis aliquam harum aperiam nesciunt. Iusto est dicta magni perferendis cumque error atque esse quia harum eligendi.`}
+							/>;
 						default:
 							return <></>
 					}
