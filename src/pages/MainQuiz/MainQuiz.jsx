@@ -9,7 +9,6 @@ function MainQuiz({ lang, answers, setAnswers = (f) => f }) {
 	const navigate = useNavigate();
 	const [obj, setObj] = useState();
 	const [curr, setCurr] = useState();
-	const [pageText, setPageText] = useState();
 
 	useEffect(() => {
 		setCurr(0);
@@ -51,13 +50,13 @@ function MainQuiz({ lang, answers, setAnswers = (f) => f }) {
 					<div className='grid w-full place-self-center border-2 border-white rounded-md bg-[#43c2c3]'>
 						<img className='w-full' src={homeImg} alt='none' />
 					</div>
-					<p className='place-self-center'>НА ГОЛОВНУ</p>
+					<p className='place-self-center'>{lang === 'ru' ? 'На главную' : lang === 'en' ? 'Home' : lang === 'uk' ? 'На головну' : ''}</p>
 				</button>
 			</div>
 			<div className={classes.content}>
 				<div className={classes.quiz}>
 					<h3 className={classes.question}>
-						{obj?.question}
+						{lang === 'ru' ? obj?.ru : lang === 'en' ? obj?.en : lang === 'uk' ? obj?.uk : ''}
 					</h3>
 					<ul className={classes.options}>
 						{obj?.choices.map((el, id) => (
@@ -69,7 +68,9 @@ function MainQuiz({ lang, answers, setAnswers = (f) => f }) {
 									<img src={el.img} alt='image' className='object-cover h-full' />
 								</div>
 								<div className='grid'>
-									<p className='text-xs font-semibold text-center text-transparent justify-self-center place-self-center bg-clip-text bg-gradient-to-tr from-[#5ef5ce] to-[#4ab6ea]'>{el.choice}</p>
+									<p className='text-xs font-semibold text-center text-transparent justify-self-center place-self-center bg-clip-text bg-gradient-to-tr from-[#5ef5ce] to-[#4ab6ea]'>
+										{lang === 'ru' ? el.choice?.ru : lang === 'en' ? el.choice?.en : lang === 'uk' ? el.choice?.uk : ''}
+									</p>
 								</div>
 								<button
 									type='button'

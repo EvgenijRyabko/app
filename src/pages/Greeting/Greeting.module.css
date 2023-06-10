@@ -1,5 +1,7 @@
 .container {
 	@apply grid  
+
+	w-full
 	
 	bg-[#101010];
 }

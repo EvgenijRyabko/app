@@ -1,180 +1,75 @@
 [
 	{
-		"question": "Який вид діяльності Вас більше приваблює?",
+		"en": "Question",
+		"ru": "Вопрос",
+		"uk": "Вопрос",
 		"choices": [
 			{
 				"id": 1,
-				"choice": "Створення нових ліків",
+				"choice": {
+					"en": "Text1",
+					"ru": "Текст1",
+					"uk": "Текст1"
+				},
 				"img": "https://img.freepik.com/free-vector/science-concept-scientist-in-laboratory-experiment-research-biology-chemistry-physics-knowledge_513217-121.jpg?w=1800&t=st=1686354429~exp=1686355029~hmac=6e94ff6d295b34ee0cf81dee4b256b8088eff3434afbfd230b80295cfb1e2521"
 			},
 			{
 				"id": 4,
-				"choice": "Окультурення ландшафту",
+				"choice": {
+					"en": "Text2",
+					"ru": "Текст2",
+					"uk": "Текст2"
+				},
 				"img": "https://catherineasquithgallery.com/uploads/posts/2021-02/1614289876_62-p-chisto-chernii-fon-bez-nichego-75.jpg"
 			}
 		]
 	},
 	{
-		"question": "Какой вид деятельности Вас больше привлекает?",
+		"en": "Question",
+		"ru": "Вопрос",
+		"uk": "Вопрос",
 		"choices": [
 			{
-				"id": 2,
-				"choice": "Разработка искусственного интеллекта",
-				"img": "https://catherineasquithgallery.com/uploads/posts/2021-02/1614289876_62-p-chisto-chernii-fon-bez-nichego-75.jpg"
-			},
-			{
-				"id": 3,
-				"choice": "Сочинение стихотворений",
+				"id": 1,
+				"choice": {
+					"en": "Text1",
+					"ru": "Текст1",
+					"uk": "Текст1"
+				},
 				"img": "https://img.freepik.com/free-vector/science-concept-scientist-in-laboratory-experiment-research-biology-chemistry-physics-knowledge_513217-121.jpg?w=1800&t=st=1686354429~exp=1686355029~hmac=6e94ff6d295b34ee0cf81dee4b256b8088eff3434afbfd230b80295cfb1e2521"
-			}
-		]
-	},
-	{
-		"question": "Как Вы предпочитаете проводить свой выходной день?",
-		"choices": [
-			{
-				"id": 2,
-				"choice": "Отдохнуть в компании друзей или с близкими",
-				"img": "https://catherineasquithgallery.com/uploads/posts/2021-02/1614289876_62-p-chisto-chernii-fon-bez-nichego-75.jpg"
 			},
 			{
 				"id": 4,
-				"choice": "Послушать музыку или почитать книгу",
+				"choice": {
+					"en": "Text2",
+					"ru": "Текст2",
+					"uk": "Текст2"
+				},
 				"img": "https://catherineasquithgallery.com/uploads/posts/2021-02/1614289876_62-p-chisto-chernii-fon-bez-nichego-75.jpg"
 			}
 		]
 	},
 	{
-		"question": "Где бы вы хотели работать?",
+		"en": "Question",
+		"ru": "Вопрос",
+		"uk": "Вопрос",
 		"choices": [
 			{
 				"id": 1,
-				"choice": "В комфортных условиях, например офис или студия",
-				"img": "https://catherineasquithgallery.com/uploads/posts/2021-02/1614289876_62-p-chisto-chernii-fon-bez-nichego-75.jpg"
-			},
-			{
-				"id": 3,
-				"choice": "Не люблю сидеть в 4х стенах, предпочёл бы свежий воздух или путешествия",
-				"img": "https://catherineasquithgallery.com/uploads/posts/2021-02/1614289876_62-p-chisto-chernii-fon-bez-nichego-75.jpg"
-			}
-		]
-	},
-	{
-		"question": "Peter?",
-		"choices": [
-			{
-				"id": 2,
-				"choice": "I'm fine, thank you!",
-				"img": "https://catherineasquithgallery.com/uploads/posts/2021-02/1614289876_62-p-chisto-chernii-fon-bez-nichego-75.jpg"
-			},
-			{
-				"id": 3,
-				"choice": "Not fine",
-				"img": "https://catherineasquithgallery.com/uploads/posts/2021-02/1614289876_62-p-chisto-chernii-fon-bez-nichego-75.jpg"
-			}
-		]
-	},
-	{
-		"question": "Si?",
-		"choices": [
-			{
-				"id": 2,
-				"choice": "I'm fine, thank you!",
-				"img": "https://catherineasquithgallery.com/uploads/posts/2021-02/1614289876_62-p-chisto-chernii-fon-bez-nichego-75.jpg"
-			},
-			{
-				"id": 3,
-				"choice": "Not fine",
-				"img": "https://catherineasquithgallery.com/uploads/posts/2021-02/1614289876_62-p-chisto-chernii-fon-bez-nichego-75.jpg"
-			}
-		]
-	},
-	{
-		"question": "America?",
-		"choices": [
-			{
-				"id": 2,
-				"choice": "I'm fine, thank you!",
-				"img": "https://catherineasquithgallery.com/uploads/posts/2021-02/1614289876_62-p-chisto-chernii-fon-bez-nichego-75.jpg"
-			},
-			{
-				"id": 3,
-				"choice": "Not fine",
-				"img": "https://catherineasquithgallery.com/uploads/posts/2021-02/1614289876_62-p-chisto-chernii-fon-bez-nichego-75.jpg"
-			}
-		]
-	},
-	{
-		"question": "Lugansk?",
-		"choices": [
-			{
-				"id": 2,
-				"choice": "I'm fine, thank you!",
-				"img": "https://catherineasquithgallery.com/uploads/posts/2021-02/1614289876_62-p-chisto-chernii-fon-bez-nichego-75.jpg"
-			},
-			{
-				"id": 3,
-				"choice": "Not fine",
-				"img": "https://catherineasquithgallery.com/uploads/posts/2021-02/1614289876_62-p-chisto-chernii-fon-bez-nichego-75.jpg"
-			}
-		]
-	},
-	{
-		"question": "Sanstchto?",
-		"choices": [
-			{
-				"id": 2,
-				"choice": "I'm fine, thank you!",
-				"img": "https://catherineasquithgallery.com/uploads/posts/2021-02/1614289876_62-p-chisto-chernii-fon-bez-nichego-75.jpg"
+				"choice": {
+					"en": "Text1",
+					"ru": "Текст1",
+					"uk": "Текст1"
+				},
+				"img": "https://img.freepik.com/free-vector/science-concept-scientist-in-laboratory-experiment-research-biology-chemistry-physics-knowledge_513217-121.jpg?w=1800&t=st=1686354429~exp=1686355029~hmac=6e94ff6d295b34ee0cf81dee4b256b8088eff3434afbfd230b80295cfb1e2521"
 			},
 			{
 				"id": 4,
-				"choice": "Not fine",
-				"img": "https://catherineasquithgallery.com/uploads/posts/2021-02/1614289876_62-p-chisto-chernii-fon-bez-nichego-75.jpg"
-			}
-		]
-	},
-	{
-		"question": "Treab?",
-		"choices": [
-			{
-				"id": 1,
-				"choice": "I'm fine, thank you!",
-				"img": "https://catherineasquithgallery.com/uploads/posts/2021-02/1614289876_62-p-chisto-chernii-fon-bez-nichego-75.jpg"
-			},
-			{
-				"id": 4,
-				"choice": "Not fine",
-				"img": "https://catherineasquithgallery.com/uploads/posts/2021-02/1614289876_62-p-chisto-chernii-fon-bez-nichego-75.jpg"
-			}
-		]
-	},
-	{
-		"question": "adfadf?",
-		"choices": [
-			{
-				"id": 1,
-				"choice": "I'm fine, thank you!",
-				"img": "https://catherineasquithgallery.com/uploads/posts/2021-02/1614289876_62-p-chisto-chernii-fon-bez-nichego-75.jpg"
-			},
-			{
-				"id": 4,
-				"choice": "Not fine",
-				"img": "https://catherineasquithgallery.com/uploads/posts/2021-02/1614289876_62-p-chisto-chernii-fon-bez-nichego-75.jpg"
-			}
-		]
-	},
-	{
-		"question": "1243?",
-		"choices": [
-			{
-				"id": 1,
-				"choice": "I'm fine, thank you!",
-				"img": "https://catherineasquithgallery.com/uploads/posts/2021-02/1614289876_62-p-chisto-chernii-fon-bez-nichego-75.jpg"
-			},
-			{
-				"id": 4,
-				"choice": "Not fine",
+				"choice": {
+					"en": "Text2",
+					"ru": "Текст2",
+					"uk": "Текст2"
+				},
 				"img": "https://catherineasquithgallery.com/uploads/posts/2021-02/1614289876_62-p-chisto-chernii-fon-bez-nichego-75.jpg"
 			}
 		]
