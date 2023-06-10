@@ -5,6 +5,7 @@ import questions from '../../data/questions.json';
 import results from '../../data/results.json';
 import Swal from "sweetalert2";
 import ResultElement from '../../components/ResultElement';
+import humanitarianLogo from '../../assets/humanitarianLogo';
 
 function Result({ answers }) {
 	const navigate = useNavigate();
@@ -105,7 +106,7 @@ function Result({ answers }) {
 						case "hum":
 							return <ResultElement
 								background={`https://img.freepik.com/free-vector/beautiful-book-club-pattern-illustration_23-2149314748.jpg?w=1380&t=st=1686409944~exp=1686410544~hmac=560f589cf7db0138fad8ffccab61711e9bcfd66d672541a006901ebcd4921aa6`}
-								image={`https://img.freepik.com/free-vector/tiny-screenwriter-sitting-on-retro-typewriter-thinking-screenplay-while-paper-drafts-flying-around-author_74855-14178.jpg?w=1800&t=st=1686354809~exp=1686355409~hmac=a6726f089f058447daed5413f6cc466217657a76fcc7554f0880027c718a8ce9`}
+								image={`humanitarianLogo`}
 								title={`Заголовок`}
 								text={`Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci odit dolorum, veniam ducimus facilis aliquam harum aperiam nesciunt. Iusto est dicta magni perferendis cumque error atque esse quia harum eligendi.`}
 							/>;
