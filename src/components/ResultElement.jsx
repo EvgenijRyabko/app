@@ -1,7 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 
-function ResultElement({ background, image, title, text }) {
+function ResultElement({ background, image, title, text, lang }) {
 	const navigate = useNavigate();
 
 	return (
@@ -22,7 +22,7 @@ function ResultElement({ background, image, title, text }) {
 							type="button"
 							onClick={() => navigate('/')}
 						>
-							На головну
+							{lang==='ru'?'На главную':lang==='en'?'Home':lang==='uk'?'На головну':''}
 						</button>
 					</div>
 				</div>

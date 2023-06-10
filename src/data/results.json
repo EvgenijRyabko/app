@@ -5,15 +5,18 @@
 		"image": "https://img.freepik.com/free-vector/science-concept-scientist-in-laboratory-experiment-research-biology-chemistry-physics-knowledge_513217-121.jpg?w=1800&t=st=1686354429~exp=1686355029~hmac=6e94ff6d295b34ee0cf81dee4b256b8088eff3434afbfd230b80295cfb1e2521",
 		"en": {
 			"title": "Engineer",
-			"text": "Some english text"
+			"text": "Some english text",
+			"button": "Home"
 		},
 		"ru": {
 			"title": "Инженер",
-			"text": "У инженера много дел..."
+			"text": "У инженера много дел...",
+			"button": "На главную"
 		},
 		"uk": {
 			"title": "Iнженер",
-			"text": "У iнженера багато справ..."
+			"text": "У iнженера багато справ...",
+			"button": "На головну"
 		}
 	},
 	{
@@ -22,15 +25,18 @@
 		"image": "https://img.freepik.com/free-vector/programmer-concept-illustration_114360-2417.jpg?w=1380&t=st=1686354621~exp=1686355221~hmac=7c5a619ec766fa889850cb65371ea8a8ea7c5c8e25682d159d9ec2d994d4b07e",
 		"en": {
 			"title": "Engineer",
-			"text": "Some english text"
+			"text": "Some english text",
+			"button": "Home"
 		},
 		"ru": {
 			"title": "Инженер",
-			"text": "У инженера много дел..."
+			"text": "У инженера много дел...",
+			"button": "На главную"
 		},
 		"uk": {
 			"title": "Iнженер",
-			"text": "У iнженера багато справ..."
+			"text": "У iнженера багато справ...",
+			"button": "На головну"
 		}
 	},
 	{
@@ -39,15 +45,18 @@
 		"image": "https://img.freepik.com/free-vector/tiny-screenwriter-sitting-on-retro-typewriter-thinking-screenplay-while-paper-drafts-flying-around-author_74855-14178.jpg?w=1800&t=st=1686354809~exp=1686355409~hmac=a6726f089f058447daed5413f6cc466217657a76fcc7554f0880027c718a8ce9",
 		"en": {
 			"title": "Engineer",
-			"text": "Some english text"
+			"text": "Some english text",
+			"button": "Home"
 		},
 		"ru": {
 			"title": "Инженер",
-			"text": "У инженера много дел..."
+			"text": "У инженера много дел...",
+			"button": "На главную"
 		},
 		"uk": {
 			"title": "Iнженер",
-			"text": "У iнженера багато справ..."
+			"text": "У iнженера багато справ...",
+			"button": "На головну"
 		}
 	},
 	{
@@ -56,15 +65,18 @@
 		"image": "https://img.freepik.com/free-vector/smiling-woman-standing-near-easel-and-painting-flat-illustration_74855-11057.jpg?w=1800&t=st=1686354901~exp=1686355501~hmac=e82f48bdd337ddab8eb093bd4c973cda1306817671fb453b8620cda1dc57bbac",
 		"en": {
 			"title": "Engineer",
-			"text": "Some english text"
+			"text": "Some english text",
+			"button": "Home"
 		},
 		"ru": {
 			"title": "Инженер",
-			"text": "У инженера много дел..."
+			"text": "У инженера много дел...",
+			"button": "На главную"
 		},
 		"uk": {
 			"title": "Iнженер",
-			"text": "У iнженера багато справ..."
+			"text": "У iнженера багато справ...",
+			"button": "На головну"
 		}
 	}
 ]

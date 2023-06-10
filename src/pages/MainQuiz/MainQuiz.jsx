@@ -66,7 +66,7 @@ function MainQuiz({ lang, answers, setAnswers = (f) => f }) {
 									? id === 0 ? 'justify-self-end border-[3px] border-green-400 w-full rotate-[-10deg]' : 'justify-self-start border-[3px] border-green-400 min-w-full rotate-[5deg]'
 									: id === 0 ? 'justify-self-end border-[3px] min-w-full rotate-[-10deg]' : 'justify-self-start border-[3px] min-w-full rotate-[5deg]'}>
 								<div className='mb-0 m-2'>
-									<img src='https://catherineasquithgallery.com/uploads/posts/2021-02/1614289876_62-p-chisto-chernii-fon-bez-nichego-75.jpg' alt='image' className='object-cover h-full' />
+									<img src={el.img} alt='image' className='object-cover h-full' />
 								</div>
 								<div className='grid'>
 									<p className='text-xs font-semibold text-center text-transparent justify-self-center place-self-center bg-clip-text bg-gradient-to-tr from-[#5ef5ce] to-[#4ab6ea]'>{el.choice}</p>

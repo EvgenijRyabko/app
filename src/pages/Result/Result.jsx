@@ -5,9 +5,9 @@ import questions from '../../data/questions.json';
 import results from '../../data/results.json';
 import Swal from "sweetalert2";
 import ResultElement from '../../components/ResultElement';
-import humanitarianLogo from '../../assets/humanitarianLogo';
+import humanitarianLogo from '../../assets/humanitarianLogo.png';
 
-function Result({ answers }) {
+function Result({ answers, lang }) {
 	const navigate = useNavigate();
 	const [categories, setCategories] = useState({
 		eng: 0,
@@ -16,9 +16,11 @@ function Result({ answers }) {
 		art: 0
 	});
 	const [res, setRes] = useState();
-	const [pageText, setPageText] = useState({
+	const [pageData, setPageData] = useState({
+		background: '',
+		image: '',
 		button: '',
-		header: '',
+		title: '',
 		text: '',
 	});
 
@@ -54,33 +56,46 @@ function Result({ answers }) {
 		].sort((a, b) => b.value - a.value)[0];
 
 		setRes(result);
-	}, []);
+	}, [lang]);
 
 	useEffect(() => {
+		if (res) {
+			const pageInfo = results.find(el => el.category === res.name);
 
-		switch (lang) {
-			case 'ru':
-				setPageText({
-					header: 'Тест на определение профориентации',
-					button: 'Начать тест!'
-				});
-				break;
-			case 'uk':
-				setPageText({
-					header: 'Тест на виявлення профорієнтації',
-					button: 'Почати тест!'
-				});
-				break;
-			case 'en':
-				setPageText({
-					header: 'Career Guidance Test',
-					button: 'Start test!'
-				});
-				break;
-			default:
-				break;
+			switch (lang) {
+				case 'ru':
+					setPageData({
+						background: pageInfo.background,
+						image: pageInfo.image,
+						title: pageInfo.ru.title,
+						text: pageInfo.ru.text,
+						button: pageInfo.ru.button
+					});
+					break;
+				case 'uk':
+					setPageData({
+						background: pageInfo.background,
+						image: pageInfo.image,
+						title: pageInfo.uk.title,
+						text: pageInfo.uk.text,
+						button: pageInfo.uk.button
+					});
+					break;
+				case 'en':
+					setPageData({
+						background: pageInfo.background,
+						image: pageInfo.image,
+						title: pageInfo.en.title,
+						text: pageInfo.en.text,
+						button: pageInfo.en.button
+					});
+					break;
+				default:
+					break;
+			}
 		}
-	}, [lang]);
+	}, [res]);
+
 
 	return (
 		<div className="min-h-screen w-full">
@@ -91,31 +106,35 @@ function Result({ answers }) {
 					switch (res?.name) {
 						case "eng":
 							return <ResultElement
-								background={`https://img.freepik.com/free-vector/colorful-design-science-education_23-2148484343.jpg?w=1800&t=st=1686404415~exp=1686405015~hmac=6410b6e477d235a1d38b6768452e727ff5eadbab5fd617acebd81f8567db7851`}
-								image={`https://img.freepik.com/free-vector/science-concept-scientist-in-laboratory-experiment-research-biology-chemistry-physics-knowledge_513217-121.jpg?w=1800&t=st=1686354429~exp=1686355029~hmac=6e94ff6d295b34ee0cf81dee4b256b8088eff3434afbfd230b80295cfb1e2521`}
-								title={`Заголовок`}
-								text={`Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci odit dolorum, veniam ducimus facilis aliquam harum aperiam nesciunt. Iusto est dicta magni perferendis cumque error atque esse quia harum eligendi.`}
+								background={pageData.background}
+								image={pageData.image}
+								title={pageData.title}
+								text={pageData.text}
+								lang={lang}
 							/>;
 						case "prog":
 							return <ResultElement
-								background={`https://img.freepik.com/free-vector/binary-code-white-background-with-floating-numbers_1017-25331.jpg?w=1800&t=st=1686354673~exp=1686355273~hmac=0df5a897f643dda31f6aef5d772b30b6b5fb7eb38efcfb4b8bad63f70e830b93`}
-								image={`https://img.freepik.com/free-vector/programmer-concept-illustration_114360-2417.jpg?w=1380&t=st=1686354621~exp=1686355221~hmac=7c5a619ec766fa889850cb65371ea8a8ea7c5c8e25682d159d9ec2d994d4b07e`}
-								title={`Заголовок`}
-								text={`Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci odit dolorum, veniam ducimus facilis aliquam harum aperiam nesciunt. Iusto est dicta magni perferendis cumque error atque esse quia harum eligendi.`}
+								background={pageData.background}
+								image={pageData.image}
+								title={pageData.title}
+								text={pageData.text}
+								lang={lang}
 							/>;
 						case "hum":
 							return <ResultElement
-								background={`https://img.freepik.com/free-vector/beautiful-book-club-pattern-illustration_23-2149314748.jpg?w=1380&t=st=1686409944~exp=1686410544~hmac=560f589cf7db0138fad8ffccab61711e9bcfd66d672541a006901ebcd4921aa6`}
-								image={`humanitarianLogo`}
-								title={`Заголовок`}
-								text={`Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci odit dolorum, veniam ducimus facilis aliquam harum aperiam nesciunt. Iusto est dicta magni perferendis cumque error atque esse quia harum eligendi.`}
+								background={pageData.background}
+								image={pageData.image}
+								title={pageData.title}
+								text={pageData.text}
+								lang={lang}
 							/>;
 						case "art":
 							return <ResultElement
-								background={`https://img.freepik.com/free-vector/hand-drawn-world-art-day-background_23-2149332776.jpg?w=1800&t=st=1686410032~exp=1686410632~hmac=31ee03400a30e8fbc4fdfe1776fa303e57064a0fb8fc54e21d2cede1ff2fec98`}
-								image={`https://img.freepik.com/free-vector/smiling-woman-standing-near-easel-and-painting-flat-illustration_74855-11057.jpg?w=1800&t=st=1686354901~exp=1686355501~hmac=e82f48bdd337ddab8eb093bd4c973cda1306817671fb453b8620cda1dc57bbac`}
-								title={`Заголовок`}
-								text={`Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci odit dolorum, veniam ducimus facilis aliquam harum aperiam nesciunt. Iusto est dicta magni perferendis cumque error atque esse quia harum eligendi.`}
+								background={pageData.background}
+								image={pageData.image}
+								title={pageData.title}
+								text={pageData.text}
+								lang={lang}
 							/>;
 						default:
 							return <></>

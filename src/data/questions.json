@@ -4,11 +4,13 @@
 		"choices": [
 			{
 				"id": 1,
-				"choice": "Створення нових ліків"
+				"choice": "Створення нових ліків",
+				"img": "https://img.freepik.com/free-vector/science-concept-scientist-in-laboratory-experiment-research-biology-chemistry-physics-knowledge_513217-121.jpg?w=1800&t=st=1686354429~exp=1686355029~hmac=6e94ff6d295b34ee0cf81dee4b256b8088eff3434afbfd230b80295cfb1e2521"
 			},
 			{
 				"id": 4,
-				"choice": "Окультурення ландшафту"
+				"choice": "Окультурення ландшафту",
+				"img": "https://catherineasquithgallery.com/uploads/posts/2021-02/1614289876_62-p-chisto-chernii-fon-bez-nichego-75.jpg"
 			}
 		]
 	},
@@ -17,11 +19,13 @@
 		"choices": [
 			{
 				"id": 2,
-				"choice": "Разработка искусственного интеллекта"
+				"choice": "Разработка искусственного интеллекта",
+				"img": "https://catherineasquithgallery.com/uploads/posts/2021-02/1614289876_62-p-chisto-chernii-fon-bez-nichego-75.jpg"
 			},
 			{
 				"id": 3,
-				"choice": "Сочинение стихотворений"
+				"choice": "Сочинение стихотворений",
+				"img": "https://img.freepik.com/free-vector/science-concept-scientist-in-laboratory-experiment-research-biology-chemistry-physics-knowledge_513217-121.jpg?w=1800&t=st=1686354429~exp=1686355029~hmac=6e94ff6d295b34ee0cf81dee4b256b8088eff3434afbfd230b80295cfb1e2521"
 			}
 		]
 	},
@@ -30,11 +34,13 @@
 		"choices": [
 			{
 				"id": 2,
-				"choice": "Отдохнуть в компании друзей или с близкими"
+				"choice": "Отдохнуть в компании друзей или с близкими",
+				"img": "https://catherineasquithgallery.com/uploads/posts/2021-02/1614289876_62-p-chisto-chernii-fon-bez-nichego-75.jpg"
 			},
 			{
 				"id": 4,
-				"choice": "Послушать музыку или почитать книгу"
+				"choice": "Послушать музыку или почитать книгу",
+				"img": "https://catherineasquithgallery.com/uploads/posts/2021-02/1614289876_62-p-chisto-chernii-fon-bez-nichego-75.jpg"
 			}
 		]
 	},
@@ -43,11 +49,13 @@
 		"choices": [
 			{
 				"id": 1,
-				"choice": "В комфортных условиях, например офис или студия"
+				"choice": "В комфортных условиях, например офис или студия",
+				"img": "https://catherineasquithgallery.com/uploads/posts/2021-02/1614289876_62-p-chisto-chernii-fon-bez-nichego-75.jpg"
 			},
 			{
 				"id": 3,
-				"choice": "Не люблю сидеть в 4х стенах, предпочёл бы свежий воздух или путешествия"
+				"choice": "Не люблю сидеть в 4х стенах, предпочёл бы свежий воздух или путешествия",
+				"img": "https://catherineasquithgallery.com/uploads/posts/2021-02/1614289876_62-p-chisto-chernii-fon-bez-nichego-75.jpg"
 			}
 		]
 	},
@@ -56,11 +64,13 @@
 		"choices": [
 			{
 				"id": 2,
-				"choice": "I'm fine, thank you!"
+				"choice": "I'm fine, thank you!",
+				"img": "https://catherineasquithgallery.com/uploads/posts/2021-02/1614289876_62-p-chisto-chernii-fon-bez-nichego-75.jpg"
 			},
 			{
 				"id": 3,
-				"choice": "Not fine"
+				"choice": "Not fine",
+				"img": "https://catherineasquithgallery.com/uploads/posts/2021-02/1614289876_62-p-chisto-chernii-fon-bez-nichego-75.jpg"
 			}
 		]
 	},
@@ -69,11 +79,13 @@
 		"choices": [
 			{
 				"id": 2,
-				"choice": "I'm fine, thank you!"
+				"choice": "I'm fine, thank you!",
+				"img": "https://catherineasquithgallery.com/uploads/posts/2021-02/1614289876_62-p-chisto-chernii-fon-bez-nichego-75.jpg"
 			},
 			{
 				"id": 3,
-				"choice": "Not fine"
+				"choice": "Not fine",
+				"img": "https://catherineasquithgallery.com/uploads/posts/2021-02/1614289876_62-p-chisto-chernii-fon-bez-nichego-75.jpg"
 			}
 		]
 	},
@@ -82,11 +94,13 @@
 		"choices": [
 			{
 				"id": 2,
-				"choice": "I'm fine, thank you!"
+				"choice": "I'm fine, thank you!",
+				"img": "https://catherineasquithgallery.com/uploads/posts/2021-02/1614289876_62-p-chisto-chernii-fon-bez-nichego-75.jpg"
 			},
 			{
 				"id": 3,
-				"choice": "Not fine"
+				"choice": "Not fine",
+				"img": "https://catherineasquithgallery.com/uploads/posts/2021-02/1614289876_62-p-chisto-chernii-fon-bez-nichego-75.jpg"
 			}
 		]
 	},
@@ -95,11 +109,13 @@
 		"choices": [
 			{
 				"id": 2,
-				"choice": "I'm fine, thank you!"
+				"choice": "I'm fine, thank you!",
+				"img": "https://catherineasquithgallery.com/uploads/posts/2021-02/1614289876_62-p-chisto-chernii-fon-bez-nichego-75.jpg"
 			},
 			{
 				"id": 3,
-				"choice": "Not fine"
+				"choice": "Not fine",
+				"img": "https://catherineasquithgallery.com/uploads/posts/2021-02/1614289876_62-p-chisto-chernii-fon-bez-nichego-75.jpg"
 			}
 		]
 	},
@@ -108,11 +124,13 @@
 		"choices": [
 			{
 				"id": 2,
-				"choice": "I'm fine, thank you!"
+				"choice": "I'm fine, thank you!",
+				"img": "https://catherineasquithgallery.com/uploads/posts/2021-02/1614289876_62-p-chisto-chernii-fon-bez-nichego-75.jpg"
 			},
 			{
 				"id": 4,
-				"choice": "Not fine"
+				"choice": "Not fine",
+				"img": "https://catherineasquithgallery.com/uploads/posts/2021-02/1614289876_62-p-chisto-chernii-fon-bez-nichego-75.jpg"
 			}
 		]
 	},
@@ -121,11 +139,13 @@
 		"choices": [
 			{
 				"id": 1,
-				"choice": "I'm fine, thank you!"
+				"choice": "I'm fine, thank you!",
+				"img": "https://catherineasquithgallery.com/uploads/posts/2021-02/1614289876_62-p-chisto-chernii-fon-bez-nichego-75.jpg"
 			},
 			{
 				"id": 4,
-				"choice": "Not fine"
+				"choice": "Not fine",
+				"img": "https://catherineasquithgallery.com/uploads/posts/2021-02/1614289876_62-p-chisto-chernii-fon-bez-nichego-75.jpg"
 			}
 		]
 	},
@@ -134,11 +154,13 @@
 		"choices": [
 			{
 				"id": 1,
-				"choice": "I'm fine, thank you!"
+				"choice": "I'm fine, thank you!",
+				"img": "https://catherineasquithgallery.com/uploads/posts/2021-02/1614289876_62-p-chisto-chernii-fon-bez-nichego-75.jpg"
 			},
 			{
 				"id": 4,
-				"choice": "Not fine"
+				"choice": "Not fine",
+				"img": "https://catherineasquithgallery.com/uploads/posts/2021-02/1614289876_62-p-chisto-chernii-fon-bez-nichego-75.jpg"
 			}
 		]
 	},
@@ -147,11 +169,13 @@
 		"choices": [
 			{
 				"id": 1,
-				"choice": "I'm fine, thank you!"
+				"choice": "I'm fine, thank you!",
+				"img": "https://catherineasquithgallery.com/uploads/posts/2021-02/1614289876_62-p-chisto-chernii-fon-bez-nichego-75.jpg"
 			},
 			{
 				"id": 4,
-				"choice": "Not fine"
+				"choice": "Not fine",
+				"img": "https://catherineasquithgallery.com/uploads/posts/2021-02/1614289876_62-p-chisto-chernii-fon-bez-nichego-75.jpg"
 			}
 		]
 	}
