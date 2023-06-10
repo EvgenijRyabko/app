@@ -1,8 +1,11 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 function ResultElement({ background, image, title, text }) {
+	const navigate = useNavigate();
+
 	return (
-		<div className={`grid bg-cover min-h-screen w-full place-self-center	bg-[url('${background}')]`}>
+		<div className={`grid bg-cover min-h-screen w-full place-self-center bg-[url('${background}')]`}>
 			<div className={`grid backdrop-brightness-[0.8] min-h-screen w-full place-self-center`}>
 				<div className="flex flex-wrap w-3/6 min-h-screen place-self-center">
 					<div className="flex w-full justify-center">
