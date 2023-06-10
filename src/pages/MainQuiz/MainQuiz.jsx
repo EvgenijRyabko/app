@@ -75,14 +75,14 @@ function MainQuiz({ answers, setAnswers = (f) => f }) {
 								<div className='grid'>
 									<p className='text-xs font-semibold text-center text-transparent justify-self-center place-self-center bg-clip-text bg-gradient-to-tr from-[#5ef5ce] to-[#4ab6ea]'>{el.choice}</p>
 								</div>
-								{/* <button
+								<button
 									type='button'
 									onClick={() => {
 										onSelect(el.id);
 									}}
 									className='absolute w-[90%] h-full'
 								>
-								</button> */}
+								</button>
 							</li>
 						))}
 					</ul>
