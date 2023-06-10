@@ -2,10 +2,35 @@
 	{
 		"en": "Question",
 		"ru": "Вопрос",
-		"uk": "Вопрос",
+		"uk": "Питання",
 		"choices": [
 			{
-				"id": 1,
+				"id": 2,
+				"choice": {
+					"en": "Text1",
+					"ru": "Текст1",
+					"uk": "Текст1"
+				},
+				"img": "https://img.freepik.com/free-vector/teacher-concept-illustration_114360-2166.jpg?w=1380&t=st=1686424517~exp=1686425117~hmac=3e3d65c521f4227426199cddfc65d89f087c655229b6d5fadd1ed552e4ec99bd"
+			},
+			{
+				"id": 3,
+				"choice": {
+					"en": "Text2",
+					"ru": "Текст2",
+					"uk": "Текст2"
+				},
+				"img": "https://img.freepik.com/free-vector/medications-prescription-disease-treatment-health-care-medical-drugs-pills-bottles-capsules-and-syringe-with-vaccine-pharmacy-products-vector-isolated-concept-metaphor-illustration_335657-4024.jpg?w=1380&t=st=1686424624~exp=1686425224~hmac=23cca80086007952ba9f5d9e63505677ca4025a214b75d46aa530193af2d5b4c"
+			}
+		]
+	},
+	{
+		"en": "Question",
+		"ru": "Вопрос",
+		"uk": "Питання",
+		"choices": [
+			{
+				"id": 2,
 				"choice": {
 					"en": "Text1",
 					"ru": "Текст1",
@@ -14,7 +39,7 @@
 				"img": "https://img.freepik.com/free-vector/science-concept-scientist-in-laboratory-experiment-research-biology-chemistry-physics-knowledge_513217-121.jpg?w=1800&t=st=1686354429~exp=1686355029~hmac=6e94ff6d295b34ee0cf81dee4b256b8088eff3434afbfd230b80295cfb1e2521"
 			},
 			{
-				"id": 4,
+				"id": 3,
 				"choice": {
 					"en": "Text2",
 					"ru": "Текст2",
@@ -27,10 +52,10 @@
 	{
 		"en": "Question",
 		"ru": "Вопрос",
-		"uk": "Вопрос",
+		"uk": "Питання",
 		"choices": [
 			{
-				"id": 1,
+				"id": 2,
 				"choice": {
 					"en": "Text1",
 					"ru": "Текст1",
@@ -39,32 +64,7 @@
 				"img": "https://img.freepik.com/free-vector/science-concept-scientist-in-laboratory-experiment-research-biology-chemistry-physics-knowledge_513217-121.jpg?w=1800&t=st=1686354429~exp=1686355029~hmac=6e94ff6d295b34ee0cf81dee4b256b8088eff3434afbfd230b80295cfb1e2521"
 			},
 			{
-				"id": 4,
-				"choice": {
-					"en": "Text2",
-					"ru": "Текст2",
-					"uk": "Текст2"
-				},
-				"img": "https://catherineasquithgallery.com/uploads/posts/2021-02/1614289876_62-p-chisto-chernii-fon-bez-nichego-75.jpg"
-			}
-		]
-	},
-	{
-		"en": "Question",
-		"ru": "Вопрос",
-		"uk": "Вопрос",
-		"choices": [
-			{
-				"id": 1,
-				"choice": {
-					"en": "Text1",
-					"ru": "Текст1",
-					"uk": "Текст1"
-				},
-				"img": "https://img.freepik.com/free-vector/science-concept-scientist-in-laboratory-experiment-research-biology-chemistry-physics-knowledge_513217-121.jpg?w=1800&t=st=1686354429~exp=1686355029~hmac=6e94ff6d295b34ee0cf81dee4b256b8088eff3434afbfd230b80295cfb1e2521"
-			},
-			{
-				"id": 4,
+				"id": 3,
 				"choice": {
 					"en": "Text2",
 					"ru": "Текст2",

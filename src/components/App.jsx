@@ -6,13 +6,13 @@ import Result from '../pages/Result/Result';
 
 function App() {
 	const [answers, setAnswers] = useState([]);
-	const [lang, setLang] = useState('ru');
+	const [lang, setLang] = useState('uk');
 
 	return (
 		<BrowserRouter>
 			<select className="absolute bg-transparent min-w-[100px] z-[9999] left-0 bottom-0" onChange={(e) => setLang(e.target.value)}>
-				<option value={'ru'}>ru</option>
 				<option value={'uk'}>uk</option>
+				<option value={'ru'}>ru</option>
 				<option value={'en'}>en</option>
 			</select>
 			<Routes>

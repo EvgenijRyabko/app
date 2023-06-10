@@ -5,7 +5,8 @@
 	 
 	bg-gradient-to-tr from-[#5ef5ce] to-[#4ab6ea]
 
-	min-h-screen;
+	min-h-screen
+	min-w-full;
 }
 
 .head {
@@ -29,7 +30,8 @@
 	
 	grid-rows-[10fr_1fr]
 	
-	w-full;
+	w-full
+	h-full;
 }
 
 .quiz {

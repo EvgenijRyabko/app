@@ -9,10 +9,10 @@
 .background {
 	@apply grid
 
-	bg-[url('https://www.plus.ac.at/wp-content/uploads/2022/02/iStock-637874162_2020-05-06_Technology-is-a-fantastic-resource-for-study-tools_Peopleimages_WEB-scaled.jpg')] 
+	bg-[url('https://img.freepik.com/free-vector/postgraduate-career-opportunities-for-young-specialist-college-choice-advisor-college-rankings-career-assessment-test-concept-pinkish-coral-bluevector-isolated-illustration_335657-1257.jpg?w=1800&t=st=1686425245~exp=1686425845~hmac=384c92b02a75579ec3af5089665266de7190b8862cf40bd1458f3c03fa8ffdb8')] 
 	bg-cover
 
-	h-screen 
+	h-full 
 	w-5/6 
 	
 	place-self-center;
@@ -23,7 +23,7 @@
 
 	grid-rows-[4fr_6fr] 
 	
-	backdrop-brightness-[0.3] 
+	backdrop-brightness-[0.6] 
 	
 	h-screen 
 	w-full 
