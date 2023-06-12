@@ -1,8 +1,17 @@
 import React from "react";
+import Cookies from 'universal-cookie';
 import { useNavigate } from "react-router-dom";
 
 function ResultElement({ background, image, title, text, lang }) {
 	const navigate = useNavigate();
+	const cookies = new Cookies();
+
+
+	const onButtonClick = () => {
+		cookies.remove('username');
+		cookies.remove('result');
+		navigate('/');
+	}
 
 	return (
 		<div className={`grid min-h-screen w-full place-self-center`}>
@@ -20,9 +29,9 @@ function ResultElement({ background, image, title, text, lang }) {
 						<button
 							className='bg-sky-200/25 hover:bg-sky-200 transition-all duration-300 border-8 border-gray-300 text-gray-800 font-bold py-2 px-4 rounded-md place-self-center'
 							type="button"
-							onClick={() => navigate('/')}
+							onClick={onButtonClick}
 						>
-							{lang==='ru'?'На главную':lang==='en'?'Home':lang==='uk'?'На головну':''}
+							{lang === 'ru' ? 'На главную' : lang === 'en' ? 'Home' : lang === 'uk' ? 'На головну' : ''}
 						</button>
 					</div>
 				</div>

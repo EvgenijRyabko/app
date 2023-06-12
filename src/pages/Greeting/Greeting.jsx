@@ -1,18 +1,24 @@
 import React from 'react';
 import { Helmet, HelmetProvider } from 'react-helmet-async';
 import { useNavigate } from 'react-router-dom';
+import Cookies from 'universal-cookie';
 import classes from './Greeting.module.css';
 import { useEffect } from 'react';
 import { useState } from 'react';
 
 function Greeting({ lang }) {
+	const cookies = new Cookies();
 	const navigate = useNavigate();
 	const [pageText, setPageText] = useState({
 		header: 'Тест на виявлення профорієнтації',
 		button: 'Почати тест!',
 	})
 
+	const cookieResult = cookies.get('result');
+
 	useEffect(() => {
+		if (cookieResult) navigate('/result');
+
 		switch (lang) {
 			case 'ru':
 				setPageText({

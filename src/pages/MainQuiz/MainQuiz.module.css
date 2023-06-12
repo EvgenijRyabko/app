@@ -65,7 +65,7 @@
 	@apply text-xl
 	
 	justify-self-center
-	place-self-center; 
+	place-self-center;
 }
 
 .options {
@@ -73,7 +73,7 @@
 
 	my-2
 	grid-cols-2
-	gap-36
+	gap-36;
 }
 
 .options li {
@@ -93,9 +93,7 @@
 
 	text-black
 
-	bg-white
-	
-
+	bg-white;
 }
 
 .paginate {
@@ -134,4 +132,24 @@
 
 .shadow {
 	text-shadow: 4px 4px 2px #dedede;
+}
+
+.alertContainer {
+	font-size: 1px;
+}
+
+.alertTitle {
+	font-size: 48px;
+}
+
+.alertInput {
+	font-size: 36px;
+}
+
+.alertButton {
+	border-radius: 50%;
+}
+
+.alertValidation {
+	font-size: 24px;
 }

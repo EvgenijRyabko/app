@@ -3,10 +3,16 @@ import { useNavigate } from "react-router-dom";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import questions from '../../data/questions.json';
 import results from '../../data/results.js';
+import Cookies from 'universal-cookie';
 import ResultElement from '../../components/ResultElement';
 import humanitarianLogo from '../../assets/humanitarianLogo.png';
 
 function Result({ answers, lang }) {
+	const cookies = new Cookies();
+
+	const cookieName = cookies.get('username');
+	const cookieResult = cookies.get('result');
+
 	const navigate = useNavigate();
 	const [categories, setCategories] = useState({
 		eng: 0,
@@ -24,42 +30,48 @@ function Result({ answers, lang }) {
 	});
 
 	useEffect(() => {
-		if (answers.length !== questions.length) navigate("/quiz"); // Если ответов меньше, чем вопросов => перемещает обратно на тест
+		// if (answers.length !== questions.length) navigate("/quiz"); // Если ответов меньше, чем вопросов => перемещает обратно на тест
 
-		(() => {
-			for (let i = 0; i < answers.length; i++) {
-				switch (answers[i].answer) {
-					case 1:
-						setCategories({ ...categories, eng: ++categories.eng });
-						break;
-					case 2:
-						setCategories({ ...categories, prog: ++categories.prog });
-						break;
-					case 3:
-						setCategories({ ...categories, hum: ++categories.hum });
-						break;
-					case 4:
-						setCategories({ ...categories, art: ++categories.art });
-						break;
-					default:
-						break;
+		if (cookieResult) {
+			setRes(cookieResult);
+		} else {
+			(() => {
+				for (let i = 0; i < answers.length; i++) {
+					switch (answers[i].answer) {
+						case 1:
+							setCategories({ ...categories, eng: ++categories.eng });
+							break;
+						case 2:
+							setCategories({ ...categories, prog: ++categories.prog });
+							break;
+						case 3:
+							setCategories({ ...categories, hum: ++categories.hum });
+							break;
+						case 4:
+							setCategories({ ...categories, art: ++categories.art });
+							break;
+						default:
+							break;
+					}
 				}
-			}
-		})();
+			})();
 
-		const result = [
-			{ name: "eng", value: categories.eng },
-			{ name: "prog", value: categories.prog },
-			{ name: "hum", value: categories.hum },
-			{ name: "art", value: categories.art }
-		].sort((a, b) => b.value - a.value)[0];
+			const result = [
+				{ name: "eng", value: categories.eng },
+				{ name: "prog", value: categories.prog },
+				{ name: "hum", value: categories.hum },
+				{ name: "art", value: categories.art }
+			].sort((a, b) => b.value - a.value)[0];
 
-		setRes(result);
+			cookies.set('result', result.name);
+
+			setRes(result.name);
+		}
 	}, [lang]);
 
 	useEffect(() => {
 		if (res) {
-			const pageInfo = results.find(el => el.category === res.name);
+			const pageInfo = results.find(el => el.category === res);
 
 			switch (lang) {
 				case 'ru':
@@ -98,11 +110,12 @@ function Result({ answers, lang }) {
 
 	return (
 		<div className="min-h-screen w-full">
+			<header className="text-black">{cookieName}</header>
 			{
 				(() => {
-					if (!res?.name) return <></>;
+					if (!res) return <></>;
 
-					switch (res?.name) {
+					switch (res) {
 						case "eng":
 							return <ResultElement
 								background={pageData.background}

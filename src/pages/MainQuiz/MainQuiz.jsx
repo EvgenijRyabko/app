@@ -1,21 +1,64 @@
 import React, { useEffect, useState } from 'react';
 import { Helmet, HelmetProvider } from 'react-helmet-async';
+import Cookies from 'universal-cookie';
+import { useCookies } from 'react-cookie';
 import data from '../../data/questions';
 import { useNavigate } from 'react-router-dom';
 import homeImg from '../../assets/Home.svg';
 import classes from './MainQuiz.module.css';
+import Swal from 'sweetalert2';
 
 function MainQuiz({ lang, answers, setAnswers = (f) => f }) {
+	const cookies = new Cookies();
 	const navigate = useNavigate();
 	const [obj, setObj] = useState();
 	const [curr, setCurr] = useState();
+
+	const username = cookies.get('username');
+
+	const cookie = ['result', 'username'];
+
+	const [, setCookie, removeCookie] = useCookies(cookie);
 
 	useEffect(() => {
 		setCurr(0);
 		const res = data.find((el, id) => id === 0);
 
+
+		if (!username) {
+			(async () => {
+				const { value: inputUsername } = await Swal.fire({
+					allowOutsideClick: false,
+					allowEscapeKey: false,
+					text: 'Давайте познакомимся!',
+					width: `40%`,
+					input: 'text',
+					inputPlaceholder: 'Введите ваше имя',
+					confirmButtonText: 'Подтвердить',
+					customClass: {
+						title: classes.alertTitle,
+						input: classes.alertInput,
+						confirmButton: classes.alertButton,
+						validationMessage: classes.alertValidation
+					},
+					inputValidator: (value) => {
+						if (!value) {
+							return 'Вы должны что-нибудь ввести!'
+						}
+					}
+				})
+
+				if (inputUsername) {
+					for (let i = 0; i < cookies.length; i++) removeCookie(cookies[i], { path: '/' });
+
+					setCookie('username', `${inputUsername}`, { path: '/' });
+				}
+			})();
+		}
+
 		setObj(res);
 	}, []);
+
 
 	useEffect(() => {
 		const res = data.find((el, id) => id === curr);
