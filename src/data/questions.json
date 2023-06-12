@@ -1,14 +1,14 @@
 [
 	{
 		"en": "Question",
-		"ru": "Вопрос",
+		"ru": "Какие предметы вам больше всего нравятся?",
 		"uk": "Питання",
 		"choices": [
 			{
-				"id": 2,
+				"id": 1,
 				"choice": {
 					"en": "Text1",
-					"ru": "Текст1",
+					"ru": "Математика и физика",
 					"uk": "Текст1"
 				},
 				"img": "https://img.freepik.com/free-vector/teacher-concept-illustration_114360-2166.jpg?w=1380&t=st=1686424517~exp=1686425117~hmac=3e3d65c521f4227426199cddfc65d89f087c655229b6d5fadd1ed552e4ec99bd"
@@ -17,7 +17,7 @@
 				"id": 3,
 				"choice": {
 					"en": "Text2",
-					"ru": "Текст2",
+					"ru": "Литература и искусство",
 					"uk": "Текст2"
 				},
 				"img": "https://img.freepik.com/free-vector/medications-prescription-disease-treatment-health-care-medical-drugs-pills-bottles-capsules-and-syringe-with-vaccine-pharmacy-products-vector-isolated-concept-metaphor-illustration_335657-4024.jpg?w=1380&t=st=1686424624~exp=1686425224~hmac=23cca80086007952ba9f5d9e63505677ca4025a214b75d46aa530193af2d5b4c"
@@ -26,23 +26,23 @@
 	},
 	{
 		"en": "Question",
-		"ru": "Вопрос",
+		"ru": "Какие навыки вам более привычны?",
 		"uk": "Питання",
 		"choices": [
 			{
-				"id": 2,
+				"id": 1,
 				"choice": {
 					"en": "Text1",
-					"ru": "Текст1",
+					"ru": "Логическое мышление и анализ",
 					"uk": "Текст1"
 				},
 				"img": "https://img.freepik.com/free-vector/science-concept-scientist-in-laboratory-experiment-research-biology-chemistry-physics-knowledge_513217-121.jpg?w=1800&t=st=1686354429~exp=1686355029~hmac=6e94ff6d295b34ee0cf81dee4b256b8088eff3434afbfd230b80295cfb1e2521"
 			},
 			{
-				"id": 3,
+				"id": 4,
 				"choice": {
 					"en": "Text2",
-					"ru": "Текст2",
+					"ru": "Творчество и воображение",
 					"uk": "Текст2"
 				},
 				"img": "https://catherineasquithgallery.com/uploads/posts/2021-02/1614289876_62-p-chisto-chernii-fon-bez-nichego-75.jpg"
@@ -51,14 +51,14 @@
 	},
 	{
 		"en": "Question",
-		"ru": "Вопрос",
+		"ru": "Что вас больше всего вдохновляет?",
 		"uk": "Питання",
 		"choices": [
 			{
-				"id": 2,
+				"id": 1,
 				"choice": {
 					"en": "Text1",
-					"ru": "Текст1",
+					"ru": "Работа с технологиями и новыми изобретениями",
 					"uk": "Текст1"
 				},
 				"img": "https://img.freepik.com/free-vector/science-concept-scientist-in-laboratory-experiment-research-biology-chemistry-physics-knowledge_513217-121.jpg?w=1800&t=st=1686354429~exp=1686355029~hmac=6e94ff6d295b34ee0cf81dee4b256b8088eff3434afbfd230b80295cfb1e2521"
@@ -67,7 +67,432 @@
 				"id": 3,
 				"choice": {
 					"en": "Text2",
-					"ru": "Текст2",
+					"ru": "Исследование культуры и истории",
+					"uk": "Текст2"
+				},
+				"img": "https://catherineasquithgallery.com/uploads/posts/2021-02/1614289876_62-p-chisto-chernii-fon-bez-nichego-75.jpg"
+			}
+		]
+	},
+	{
+		"en": "Question",
+		"ru": "Как вы предпочитаете проводить время?",
+		"uk": "Питання",
+		"choices": [
+			{
+				"id": 3,
+				"choice": {
+					"en": "Text1",
+					"ru": "Внутри, в комфортных условиях",
+					"uk": "Текст1"
+				},
+				"img": "https://img.freepik.com/free-vector/science-concept-scientist-in-laboratory-experiment-research-biology-chemistry-physics-knowledge_513217-121.jpg?w=1800&t=st=1686354429~exp=1686355029~hmac=6e94ff6d295b34ee0cf81dee4b256b8088eff3434afbfd230b80295cfb1e2521"
+			},
+			{
+				"id": 4,
+				"choice": {
+					"en": "Text2",
+					"ru": "На открытом воздухе, в естественной среде",
+					"uk": "Текст2"
+				},
+				"img": "https://catherineasquithgallery.com/uploads/posts/2021-02/1614289876_62-p-chisto-chernii-fon-bez-nichego-75.jpg"
+			}
+		]
+	},
+	{
+		"en": "Question",
+		"ru": "Что вас больше привлекает?",
+		"uk": "Питання",
+		"choices": [
+			{
+				"id": 2,
+				"choice": {
+					"en": "Text1",
+					"ru": "Работа с компьютерами и технологиями",
+					"uk": "Текст1"
+				},
+				"img": "https://img.freepik.com/free-vector/science-concept-scientist-in-laboratory-experiment-research-biology-chemistry-physics-knowledge_513217-121.jpg?w=1800&t=st=1686354429~exp=1686355029~hmac=6e94ff6d295b34ee0cf81dee4b256b8088eff3434afbfd230b80295cfb1e2521"
+			},
+			{
+				"id": 3,
+				"choice": {
+					"en": "Text2",
+					"ru": "Работа с людьми и социальными вопросами",
+					"uk": "Текст2"
+				},
+				"img": "https://catherineasquithgallery.com/uploads/posts/2021-02/1614289876_62-p-chisto-chernii-fon-bez-nichego-75.jpg"
+			}
+		]
+	},
+	{
+		"en": "Question",
+		"ru": "Какое из следующих утверждений вас лучше описывает?",
+		"uk": "Питання",
+		"choices": [
+			{
+				"id": 2,
+				"choice": {
+					"en": "Text1",
+					"ru": "Я люблю решать сложные логические задачи",
+					"uk": "Текст1"
+				},
+				"img": "https://img.freepik.com/free-vector/science-concept-scientist-in-laboratory-experiment-research-biology-chemistry-physics-knowledge_513217-121.jpg?w=1800&t=st=1686354429~exp=1686355029~hmac=6e94ff6d295b34ee0cf81dee4b256b8088eff3434afbfd230b80295cfb1e2521"
+			},
+			{
+				"id": 3,
+				"choice": {
+					"en": "Text2",
+					"ru": "Я предпочитаю общаться с людьми и исследовать их поведение",
+					"uk": "Текст2"
+				},
+				"img": "https://catherineasquithgallery.com/uploads/posts/2021-02/1614289876_62-p-chisto-chernii-fon-bez-nichego-75.jpg"
+			}
+		]
+	},
+	{
+		"en": "Question",
+		"ru": "Что вам больше всего нравится делать?",
+		"uk": "Питання",
+		"choices": [
+			{
+				"id": 1,
+				"choice": {
+					"en": "Text1",
+					"ru": "Работать с техникой и конструировать",
+					"uk": "Текст1"
+				},
+				"img": "https://img.freepik.com/free-vector/science-concept-scientist-in-laboratory-experiment-research-biology-chemistry-physics-knowledge_513217-121.jpg?w=1800&t=st=1686354429~exp=1686355029~hmac=6e94ff6d295b34ee0cf81dee4b256b8088eff3434afbfd230b80295cfb1e2521"
+			},
+			{
+				"id": 2,
+				"choice": {
+					"en": "Text2",
+					"ru": "Создавать программы и кодировать",
+					"uk": "Текст2"
+				},
+				"img": "https://catherineasquithgallery.com/uploads/posts/2021-02/1614289876_62-p-chisto-chernii-fon-bez-nichego-75.jpg"
+			}
+		]
+	},
+	{
+		"en": "Question",
+		"ru": "Что вас больше привлекает?",
+		"uk": "Питання",
+		"choices": [
+			{
+				"id": 1,
+				"choice": {
+					"en": "Text1",
+					"ru": "Рациональное решение проблем",
+					"uk": "Текст1"
+				},
+				"img": "https://img.freepik.com/free-vector/science-concept-scientist-in-laboratory-experiment-research-biology-chemistry-physics-knowledge_513217-121.jpg?w=1800&t=st=1686354429~exp=1686355029~hmac=6e94ff6d295b34ee0cf81dee4b256b8088eff3434afbfd230b80295cfb1e2521"
+			},
+			{
+				"id": 4,
+				"choice": {
+					"en": "Text2",
+					"ru": "Эмоциональное выражение и творчество",
+					"uk": "Текст2"
+				},
+				"img": "https://catherineasquithgallery.com/uploads/posts/2021-02/1614289876_62-p-chisto-chernii-fon-bez-nichego-75.jpg"
+			}
+		]
+	},
+	{
+		"en": "Question",
+		"ru": "Какое из следующих действий вам нравится больше?",
+		"uk": "Питання",
+		"choices": [
+			{
+				"id": 1,
+				"choice": {
+					"en": "Text1",
+					"ru": "Анализировать и изучать данные ",
+					"uk": "Текст1"
+				},
+				"img": "https://img.freepik.com/free-vector/science-concept-scientist-in-laboratory-experiment-research-biology-chemistry-physics-knowledge_513217-121.jpg?w=1800&t=st=1686354429~exp=1686355029~hmac=6e94ff6d295b34ee0cf81dee4b256b8088eff3434afbfd230b80295cfb1e2521"
+			},
+			{
+				"id": 4,
+				"choice": {
+					"en": "Text2",
+					"ru": "Создавать и интерпретировать искусство",
+					"uk": "Текст2"
+				},
+				"img": "https://catherineasquithgallery.com/uploads/posts/2021-02/1614289876_62-p-chisto-chernii-fon-bez-nichego-75.jpg"
+			}
+		]
+	},
+	{
+		"en": "Question",
+		"ru": "Какое из следующих действий вам ближе?",
+		"uk": "Питання",
+		"choices": [
+			{
+				"id": 1,
+				"choice": {
+					"en": "Text1",
+					"ru": "Анализировать и решать сложные математические задачи",
+					"uk": "Текст1"
+				},
+				"img": "https://img.freepik.com/free-vector/science-concept-scientist-in-laboratory-experiment-research-biology-chemistry-physics-knowledge_513217-121.jpg?w=1800&t=st=1686354429~exp=1686355029~hmac=6e94ff6d295b34ee0cf81dee4b256b8088eff3434afbfd230b80295cfb1e2521"
+			},
+			{
+				"id": 3,
+				"choice": {
+					"en": "Text2",
+					"ru": "Исследовать и анализировать тексты и литературу",
+					"uk": "Текст2"
+				},
+				"img": "https://catherineasquithgallery.com/uploads/posts/2021-02/1614289876_62-p-chisto-chernii-fon-bez-nichego-75.jpg"
+			}
+		]
+	},
+	{
+		"en": "Question",
+		"ru": "Что вам более интересно?",
+		"uk": "Питання",
+		"choices": [
+			{
+				"id": 2,
+				"choice": {
+					"en": "Text1",
+					"ru": "Создание новых программ",
+					"uk": "Текст1"
+				},
+				"img": "https://img.freepik.com/free-vector/science-concept-scientist-in-laboratory-experiment-research-biology-chemistry-physics-knowledge_513217-121.jpg?w=1800&t=st=1686354429~exp=1686355029~hmac=6e94ff6d295b34ee0cf81dee4b256b8088eff3434afbfd230b80295cfb1e2521"
+			},
+			{
+				"id": 3,
+				"choice": {
+					"en": "Text2",
+					"ru": "Исследование исторических событий",
+					"uk": "Текст2"
+				},
+				"img": "https://catherineasquithgallery.com/uploads/posts/2021-02/1614289876_62-p-chisto-chernii-fon-bez-nichego-75.jpg"
+			}
+		]
+	},
+	{
+		"en": "Question",
+		"ru": "Какое из следующих умений вы предпочитаете развивать?",
+		"uk": "Питання",
+		"choices": [
+			{
+				"id": 1,
+				"choice": {
+					"en": "Text1",
+					"ru": "Аналитическое мышление и решение сложных задач",
+					"uk": "Текст1"
+				},
+				"img": "https://img.freepik.com/free-vector/science-concept-scientist-in-laboratory-experiment-research-biology-chemistry-physics-knowledge_513217-121.jpg?w=1800&t=st=1686354429~exp=1686355029~hmac=6e94ff6d295b34ee0cf81dee4b256b8088eff3434afbfd230b80295cfb1e2521"
+			},
+			{
+				"id": 4,
+				"choice": {
+					"en": "Text2",
+					"ru": "Креативность и умение выразить свои идеи",
+					"uk": "Текст2"
+				},
+				"img": "https://catherineasquithgallery.com/uploads/posts/2021-02/1614289876_62-p-chisto-chernii-fon-bez-nichego-75.jpg"
+			}
+		]
+	},
+	{
+		"en": "Question",
+		"ru": "Что вас больше привлекает?",
+		"uk": "Питання",
+		"choices": [
+			{
+				"id": 2,
+				"choice": {
+					"en": "Text1",
+					"ru": "Работа с базами данных ",
+					"uk": "Текст1"
+				},
+				"img": "https://img.freepik.com/free-vector/science-concept-scientist-in-laboratory-experiment-research-biology-chemistry-physics-knowledge_513217-121.jpg?w=1800&t=st=1686354429~exp=1686355029~hmac=6e94ff6d295b34ee0cf81dee4b256b8088eff3434afbfd230b80295cfb1e2521"
+			},
+			{
+				"id": 4,
+				"choice": {
+					"en": "Text2",
+					"ru": "Разработка интерфейсов",
+					"uk": "Текст2"
+				},
+				"img": "https://catherineasquithgallery.com/uploads/posts/2021-02/1614289876_62-p-chisto-chernii-fon-bez-nichego-75.jpg"
+			}
+		]
+	},
+	{
+		"en": "Question",
+		"ru": "Какое из следующих утверждений вас лучше описывает?",
+		"uk": "Питання",
+		"choices": [
+			{
+				"id": 3,
+				"choice": {
+					"en": "Text1",
+					"ru": "Я предпочитаю работать с абстрактными понятиями и идеями",
+					"uk": "Текст1"
+				},
+				"img": "https://img.freepik.com/free-vector/science-concept-scientist-in-laboratory-experiment-research-biology-chemistry-physics-knowledge_513217-121.jpg?w=1800&t=st=1686354429~exp=1686355029~hmac=6e94ff6d295b34ee0cf81dee4b256b8088eff3434afbfd230b80295cfb1e2521"
+			},
+			{
+				"id": 2,
+				"choice": {
+					"en": "Text2",
+					"ru": "Я предпочитаю работать с конкретными инструментами и кодом ",
+					"uk": "Текст2"
+				},
+				"img": "https://catherineasquithgallery.com/uploads/posts/2021-02/1614289876_62-p-chisto-chernii-fon-bez-nichego-75.jpg"
+			}
+		]
+	},
+	{
+		"en": "Question",
+		"ru": "Какой из следующих аспектов работы вам более интересен?",
+		"uk": "Питання",
+		"choices": [
+			{
+				"id": 2,
+				"choice": {
+					"en": "Text1",
+					"ru": "Работа с большим объемом данных и информации",
+					"uk": "Текст1"
+				},
+				"img": "https://img.freepik.com/free-vector/science-concept-scientist-in-laboratory-experiment-research-biology-chemistry-physics-knowledge_513217-121.jpg?w=1800&t=st=1686354429~exp=1686355029~hmac=6e94ff6d295b34ee0cf81dee4b256b8088eff3434afbfd230b80295cfb1e2521"
+			},
+			{
+				"id": 3,
+				"choice": {
+					"en": "Text2",
+					"ru": "Анализ и исследование социальных вопросов и влияния на общество",
+					"uk": "Текст2"
+				},
+				"img": "https://catherineasquithgallery.com/uploads/posts/2021-02/1614289876_62-p-chisto-chernii-fon-bez-nichego-75.jpg"
+			}
+		]
+	},
+	{
+		"en": "Question",
+		"ru": "Какие навыки вы предпочитаете развивать?",
+		"uk": "Питання",
+		"choices": [
+			{
+				"id": 2,
+				"choice": {
+					"en": "Text1",
+					"ru": "Технические и программные навыки",
+					"uk": "Текст1"
+				},
+				"img": "https://img.freepik.com/free-vector/science-concept-scientist-in-laboratory-experiment-research-biology-chemistry-physics-knowledge_513217-121.jpg?w=1800&t=st=1686354429~exp=1686355029~hmac=6e94ff6d295b34ee0cf81dee4b256b8088eff3434afbfd230b80295cfb1e2521"
+			},
+			{
+				"id": 4,
+				"choice": {
+					"en": "Text2",
+					"ru": "Креативные и художественные навыки",
+					"uk": "Текст2"
+				},
+				"img": "https://catherineasquithgallery.com/uploads/posts/2021-02/1614289876_62-p-chisto-chernii-fon-bez-nichego-75.jpg"
+			}
+		]
+	},
+	{
+		"en": "Question",
+		"ru": "Какие виды задач вам интереснее решать?",
+		"uk": "Питання",
+		"choices": [
+			{
+				"id": 1,
+				"choice": {
+					"en": "Text1",
+					"ru": "Технические задачи с определенными правилами и процедурами",
+					"uk": "Текст1"
+				},
+				"img": "https://img.freepik.com/free-vector/science-concept-scientist-in-laboratory-experiment-research-biology-chemistry-physics-knowledge_513217-121.jpg?w=1800&t=st=1686354429~exp=1686355029~hmac=6e94ff6d295b34ee0cf81dee4b256b8088eff3434afbfd230b80295cfb1e2521"
+			},
+			{
+				"id": 4,
+				"choice": {
+					"en": "Text2",
+					"ru": "Комплексные проблемы, требующие креативного подхода",
+					"uk": "Текст2"
+				},
+				"img": "https://catherineasquithgallery.com/uploads/posts/2021-02/1614289876_62-p-chisto-chernii-fon-bez-nichego-75.jpg"
+			}
+		]
+	},
+	{
+		"en": "Question",
+		"ru": "Какой из следующих аспектов работы вас больше привлекает?",
+		"uk": "Питання",
+		"choices": [
+			{
+				"id": 2,
+				"choice": {
+					"en": "Text1",
+					"ru": "Экспериментирование с различными техниками и материалами",
+					"uk": "Текст1"
+				},
+				"img": "https://img.freepik.com/free-vector/science-concept-scientist-in-laboratory-experiment-research-biology-chemistry-physics-knowledge_513217-121.jpg?w=1800&t=st=1686354429~exp=1686355029~hmac=6e94ff6d295b34ee0cf81dee4b256b8088eff3434afbfd230b80295cfb1e2521"
+			},
+			{
+				"id": 4,
+				"choice": {
+					"en": "Text2",
+					"ru": "Разработка новых алгоритмов и технологий",
+					"uk": "Текст2"
+				},
+				"img": "https://catherineasquithgallery.com/uploads/posts/2021-02/1614289876_62-p-chisto-chernii-fon-bez-nichego-75.jpg"
+			}
+		]
+	},
+	{
+		"en": "Question",
+		"ru": "Какую деятельность вы предпочитаете в свободное время?",
+		"uk": "Питання",
+		"choices": [
+			{
+				"id": 1,
+				"choice": {
+					"en": "Text1",
+					"ru": "Разбираться в технических устройствах и их работе",
+					"uk": "Текст1"
+				},
+				"img": "https://img.freepik.com/free-vector/science-concept-scientist-in-laboratory-experiment-research-biology-chemistry-physics-knowledge_513217-121.jpg?w=1800&t=st=1686354429~exp=1686355029~hmac=6e94ff6d295b34ee0cf81dee4b256b8088eff3434afbfd230b80295cfb1e2521"
+			},
+			{
+				"id": 4,
+				"choice": {
+					"en": "Text2",
+					"ru": "Заниматься художественными или творческими занятиями",
+					"uk": "Текст2"
+				},
+				"img": "https://catherineasquithgallery.com/uploads/posts/2021-02/1614289876_62-p-chisto-chernii-fon-bez-nichego-75.jpg"
+			}
+		]
+	},
+	{
+		"en": "Question",
+		"ru": "Что вас больше привлекает?",
+		"uk": "Питання",
+		"choices": [
+			{
+				"id": 2,
+				"choice": {
+					"en": "Text1",
+					"ru": "Работа с компьютерами и технологиями",
+					"uk": "Текст1"
+				},
+				"img": "https://img.freepik.com/free-vector/science-concept-scientist-in-laboratory-experiment-research-biology-chemistry-physics-knowledge_513217-121.jpg?w=1800&t=st=1686354429~exp=1686355029~hmac=6e94ff6d295b34ee0cf81dee4b256b8088eff3434afbfd230b80295cfb1e2521"
+			},
+			{
+				"id": 3,
+				"choice": {
+					"en": "Text2",
+					"ru": "Работа с людьми и социальными вопросами",
 					"uk": "Текст2"
 				},
 				"img": "https://catherineasquithgallery.com/uploads/posts/2021-02/1614289876_62-p-chisto-chernii-fon-bez-nichego-75.jpg"

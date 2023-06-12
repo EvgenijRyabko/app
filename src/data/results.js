@@ -11,17 +11,17 @@ export default [
 		"image": engineerLogo,
 		"en": {
 			"title": "Engineer",
-			"text": "Some english text",
+			"text": ", your answers indicate a talent for technical and engineering thinking. You have an analytical mind, logical thinking and are interested in technical and scientific problems. Working as an engineer can provide you with the opportunity to design and create new technologies, develop innovative solutions, and contribute to the development of the modern world.",
 			"button": "Home"
 		},
 		"ru": {
 			"title": "Инженер",
-			"text": "У инженера много дел...",
+			"text": ", Ваши ответы указывают на талант в области технического и инженерного мышления. Вы обладаете аналитическим складом ума, логическим мышлением и интересуетесь техническими и научными проблемами. Работа инженером может предоставить вам возможность проектировать и создавать новые технологии, разрабатывать инновационные решения и вносить вклад в развитие современного мира.",
 			"button": "На главную"
 		},
 		"uk": {
 			"title": "Iнженер",
-			"text": "У iнженера багато справ...",
+			"text": "Ваші відповіді вказують на талант у галузі технічного та інженерного мислення. Ви маєте аналітичний склад розуму, логічне мислення та цікавитеся технічними та науковими проблемами. Робота інженером може надати вам можливість проектувати та створювати нові технології, розробляти інноваційні рішення та робити внесок у розвиток сучасного світу.",
 			"button": "На головну"
 		}
 	},
@@ -31,17 +31,17 @@ export default [
 		"image": programmerLogo,
 		"en": {
 			"title": "Programmer",
-			"text": "Some english text",
+			"text": ", your answers indicate your ability for analysis, logical thinking and interest in programming. You have skills in computer science and are able to create programs, solve complex problems and work with large amounts of information. A career as a programmer can give you the opportunity to work in software development, create new technologies, and contribute to the digital age.",
 			"button": "Home"
 		},
 		"ru": {
 			"title": "Программист",
-			"text": "У инженера много дел...",
+			"text": ", Ваши ответы указывают на вашу способность к анализу, логическому мышлению и интерес к программированию. Вы обладаете навыками в области компьютерных наук и умеете создавать программы, решать сложные задачи и работать с большими объемами информации. Карьера программиста может предоставить вам возможность работать в сфере разработки программного обеспечения, создавать новые технологии и вносить вклад в развитие цифровой эры.",
 			"button": "На главную"
 		},
 		"uk": {
 			"title": "Програміст",
-			"text": "У iнженера багато справ...",
+			"text": ", Ваші відповіді вказують на вашу здатність до аналізу, логічного мислення та інтерес до програмування. Ви маєте навички в галузі комп'ютерних наук і вмієте створювати програми, вирішувати складні завдання та працювати з великими обсягами інформації. Кар'єра програміста може надати вам можливість працювати у сфері розробки програмного забезпечення, створювати нові технології та робити внесок у розвиток цифрової ери.",
 			"button": "На головну"
 		}
 	},
@@ -51,17 +51,17 @@ export default [
 		"image": humanitarianLogo,
 		"en": {
 			"title": "Humanitarian",
-			"text": "Some english text",
+			"text": ", your answers indicate your attention to interpersonal relationships, social issues, and cultural aspects of society. You are empathic, communicative and interested in learning and understanding human behavior. A career in the liberal arts can provide you with the opportunity to work in the social sciences, marketing, psychology, journalism, or other fields that involve analyzing and understanding the human experience.",
 			"button": "Home"
 		},
 		"ru": {
 			"title": "Гуманитарий",
-			"text": "У инженера много дел...",
+			"text": ", Ваши ответы указывают на ваше внимание к межличностным отношениям, социальным проблемам и культурным аспектам общества. Вы обладаете эмпатией, коммуникативны и интересуетесь изучением и пониманием человеческого поведения. Карьера в области гуманитарных наук может предоставить вам возможность работать в области социальных наук, маркетинга, психологии, журналистики или других областях, связанных с анализом и пониманием человеческого опыта.",
 			"button": "На главную"
 		},
 		"uk": {
 			"title": "Гуманитарiй",
-			"text": "У iнженера багато справ...",
+			"text": ", Ваші відповіді вказують на вашу увагу до міжособистісних відносин, соціальних проблем та культурних аспектів суспільства. Ви маєте емпатію, комунікативні та цікавитеся вивченням та розумінням людської поведінки. Кар'єра в галузі гуманітарних наук може надати вам можливість працювати в галузі соціальних наук, маркетингу, психології, журналістики або інших галузях, пов'язаних з аналізом та розумінням людського досвіду.",
 			"button": "На головну"
 		}
 	},
@@ -71,17 +71,17 @@ export default [
 		"image": artistLogo,
 		"en": {
 			"title": "Artist",
-			"text": "Some english text",
+			"text": ", your answers indicate your creative nature and your focus on aesthetics and the visual aspects of the world. You have imagination, a sense of proportion and color perception. A career in the arts can provide you with the opportunity to work as an artist, designer, graphic designer, architect, or in other areas where your creativity can be expressed and appreciated.",
 			"button": "Home"
 		},
 		"ru": {
 			"title": "Художник",
-			"text": "У инженера много дел...",
+			"text": ", Ваши ответы указывают на вашу творческую натуру и внимание к эстетике и визуальным аспектам мира. Вы обладаете воображением, чувством пропорции и цветового восприятия. Карьера в области искусства может предоставить вам возможность работать как художник, дизайнер, графический дизайнер, архитектор или в других областях, где ваше творчество может быть выражено и оценено.",
 			"button": "На главную"
 		},
 		"uk": {
 			"title": "Художник",
-			"text": "У iнженера багато справ...",
+			"text": ", Ваші відповіді вказують на вашу творчу натуру та увагу до естетики та візуальних аспектів світу. Ви маєте уяву, почуття пропорції і колірного сприйняття. Кар'єра в галузі мистецтва може надати вам можливість працювати як художник, дизайнер, графічний дизайнер, архітектор або в інших областях, де ваша творчість може бути виражена та оцінена.",
 			"button": "На головну"
 		}
 	}
