@@ -79,7 +79,7 @@ function Result({ answers, lang }) {
 						background: pageInfo.background,
 						image: pageInfo.image,
 						title: pageInfo.ru.title,
-						text: pageInfo.ru.text,
+						text: `${cookieName} ${pageInfo.ru.text}`,
 						button: pageInfo.ru.button
 					});
 					break;
@@ -88,7 +88,7 @@ function Result({ answers, lang }) {
 						background: pageInfo.background,
 						image: pageInfo.image,
 						title: pageInfo.uk.title,
-						text: pageInfo.uk.text,
+						text: `${cookieName} ${pageInfo.uk.text}`,
 						button: pageInfo.uk.button
 					});
 					break;
@@ -97,7 +97,7 @@ function Result({ answers, lang }) {
 						background: pageInfo.background,
 						image: pageInfo.image,
 						title: pageInfo.en.title,
-						text: pageInfo.en.text,
+						text: `${cookieName} ${pageInfo.en.text}`,
 						button: pageInfo.en.button
 					});
 					break;
@@ -110,7 +110,6 @@ function Result({ answers, lang }) {
 
 	return (
 		<div className="min-h-screen w-full">
-			<header className="text-black">{cookieName}</header>
 			{
 				(() => {
 					if (!res) return <></>;
