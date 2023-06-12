@@ -29,13 +29,7 @@ select {
 	padding-left: 7px;
 }
 
-select:focus-within{
-	border-top-left-radius: 0px;
-	border-top-right-radius: 0px;
-}
-
 select option {
 	background-color: rgb(30, 30, 30);
-	border-radius: 14px;
 }
 
