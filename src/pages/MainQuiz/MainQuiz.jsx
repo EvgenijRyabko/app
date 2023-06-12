@@ -54,6 +54,13 @@ function MainQuiz({ lang, answers, setAnswers = (f) => f }) {
 				</button>
 			</div>
 			<div className={classes.content}>
+				{/* <div className={classes.form}>
+					<p className='text-sm mt-6'>Перед началом теста давайте познакомимся! Как Вас зовут?</p>
+					<form className='absolute z-10 text-center top-[50%]'>
+						<input type="text" id="fname" placeholder="Ваше имя" className='w-[80%] text-slate-900'></input><br></br>
+					</form>
+					<button className='place-self-center border-slate-300'>Начнём!</button>
+				</div> */}
 				<div className={classes.quiz}>
 					<h3 className={classes.question}>
 						{lang === 'ru' ? obj?.ru : lang === 'en' ? obj?.en : lang === 'uk' ? obj?.uk : ''}

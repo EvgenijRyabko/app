@@ -11,11 +11,11 @@ function App() {
 
 	return (
 		<BrowserRouter>
-			<div className="absolute bg-transparent min-w-[120px] z-[9999] left-2 bottom-1" onChange={(e) => setLang(e.target.value)}>
-				<select className='bg-transparent w-[90px]'>
-					<option value={'uk'}>🇺🇦</option>
-					<option value={'en'}>🇬🇧</option>
-					<option value={'ru'}>🇷🇺</option>
+			<div className="absolute place-self-end" onChange={(e) => setLang(e.target.value)}>
+				<select className='hover:border-gray-400 focus:outline-none'>
+					<option value={'uk'}>&nbsp;🇺🇦</option>
+					<option value={'en'}>&nbsp;🇬🇧</option>
+					<option value={'ru'}>&nbsp;🇷🇺</option>
 				</select>
 			</div>
 			

@@ -12,3 +12,30 @@
 	font-size: 48px;
 	color: #ffffff;
 }
+
+select {
+	appearance: none;
+	min-width: 90px;
+	
+	z-index: 10;
+	align-items: center;
+	background-color: rgba(255, 255, 255, 0.05);
+	border-width: 2px;
+	margin-left: 14px;
+	margin-bottom: 10px;
+    border-color: rgb(209 213 219 / var(--tw-border-opacity));
+	border-radius: 14px;
+
+	padding-left: 7px;
+}
+
+select:focus-within{
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+}
+
+select option {
+	background-color: rgb(30, 30, 30);
+	border-radius: 14px;
+}
+

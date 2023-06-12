@@ -25,18 +25,36 @@
 	my-1;
 }
 
+.form {
+	@apply grid
+	absolute 
+	
+	justify-self-center 
+	place-self-center 
+
+	text-center
+	
+	w-[25%] 
+	max-w-[500px] 
+	h-[60%] 
+	
+	z-10 
+	
+	bg-black;
+}
+
 .content {
 	@apply grid
 	
 	grid-rows-[10fr_1fr]
 	
-	w-full
+	w-screen
 	h-full;
 }
 
 .quiz {
 	@apply grid
-	
+	relative
 	grid-rows-[14%_3fr]
 	
 	w-full
