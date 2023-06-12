@@ -14,11 +14,8 @@ function Greeting({ lang }) {
 		button: 'Почати тест!',
 	})
 
-	const cookieResult = cookies.get('result');
 
 	useEffect(() => {
-		if (cookieResult) navigate('/result');
-
 		switch (lang) {
 			case 'ru':
 				setPageText({

@@ -15,26 +15,28 @@ function MainQuiz({ lang, answers, setAnswers = (f) => f }) {
 	const [curr, setCurr] = useState();
 
 	const username = cookies.get('username');
+	const cookieResult = cookies.get('result');
 
 	const cookie = ['result', 'username'];
 
 	const [, setCookie, removeCookie] = useCookies(cookie);
+	
 
 	useEffect(() => {
+		if (cookieResult) navigate('/result');
 		setCurr(0);
 		const res = data.find((el, id) => id === 0);
-
-
+		
 		if (!username) {
 			(async () => {
 				const { value: inputUsername } = await Swal.fire({
 					allowOutsideClick: false,
 					allowEscapeKey: false,
-					text: 'Давайте познакомимся!',
-					width: `40%`,
+					text: lang === 'ru' ? 'Давайте познакомимся!' : lang === 'en' ? "Let's get acquainted" : lang === 'uk' ? "Давайте познайомимося!" : '',
+					width: `35%`,
 					input: 'text',
-					inputPlaceholder: 'Введите ваше имя',
-					confirmButtonText: 'Подтвердить',
+					inputPlaceholder: lang === 'ru' ? 'Введите ваше имя' : lang === 'en' ? 'Enter your name' : lang === 'uk' ? "Введіть ваше ім'я" : '',
+					confirmButtonText: lang === 'ru' ? 'Подтвердить' : lang === 'en' ? 'Confirm' : lang === 'uk' ? "Підтвердити" : '',
 					customClass: {
 						title: classes.alertTitle,
 						input: classes.alertInput,
@@ -97,13 +99,6 @@ function MainQuiz({ lang, answers, setAnswers = (f) => f }) {
 				</button>
 			</div>
 			<div className={classes.content}>
-				{/* <div className={classes.form}>
-					<p className='text-sm mt-6'>Перед началом теста давайте познакомимся! Как Вас зовут?</p>
-					<form className='absolute z-10 text-center top-[50%]'>
-						<input type="text" id="fname" placeholder="Ваше имя" className='w-[80%] text-slate-900'></input><br></br>
-					</form>
-					<button className='place-self-center border-slate-300'>Начнём!</button>
-				</div> */}
 				<div className={classes.quiz}>
 					<h3 className={classes.question}>
 						{lang === 'ru' ? obj?.ru : lang === 'en' ? obj?.en : lang === 'uk' ? obj?.uk : ''}

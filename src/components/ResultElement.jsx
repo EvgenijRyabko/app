@@ -8,8 +8,8 @@ function ResultElement({ background, image, title, text, lang }) {
 
 
 	const onButtonClick = () => {
-		cookies.remove('username');
-		cookies.remove('result');
+		// cookies.remove('username');
+		// cookies.remove('result');
 		navigate('/');
 	}
 
